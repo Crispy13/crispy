@@ -17,7 +17,7 @@ import itertools
 from scipy.ndimage import rotate
 import sys
 from itertools import chain
-import os
+import os, traceback
 import tensorflow as tf
 import keras
 from .eckeras import *
@@ -160,7 +160,8 @@ def prepare_data(data_w_num, resize_output_shape = None,
         return i, d, l
         
     except Exception as e:
-        print(f'Something went wrong with {i}th file, skipping...\n Exception:\n{str(e)}')
+        print(f'Something went wrong with {i}th file, skipping...\n')
+        traceback.print_exc()
         return i, str(e), str(e)
     
 
