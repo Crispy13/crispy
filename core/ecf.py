@@ -14,7 +14,9 @@ import math
 from IPython.display import Audio, display
 
 logger = load_logger()
-
+module_name = re.search("(^[^.\n]+).*$", __name__).group(1)
+module_root_path = re.search(f"(^.+{module_name})/[^\n/]+", __file__).group(1)
+sound_path = module_root_path + "/misc/sounds"
 
 ### 
 sys_excepthook = sys.excepthook # Backup Original sys.excepthook
@@ -44,7 +46,7 @@ def cus_excepthook(logger):
 
 
 ###
-def exception_sound(logger, audio_path='/data/eck/Nope.m4a'):
+def exception_sound(logger, audio_path = sound_path + "/Nope.m4a"):
     
     def _exception_sound(self, etype, value, tb, tb_offset=None):
         """
@@ -58,7 +60,7 @@ def exception_sound(logger, audio_path='/data/eck/Nope.m4a'):
 
 
 ###
-def sound_alert(audio_path = '/data/eck/sc2-psh-rc.mp3', **kwargs):
+def sound_alert(audio_path = sound_path + "/sc2-psh-rc.mp3", **kwargs):
     display(Audio(audio_path, autoplay = True))
 
 
