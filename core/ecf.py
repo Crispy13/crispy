@@ -65,20 +65,24 @@ def sound_alert(audio_path = sound_path + "/sc2-psh-rc.mp3", **kwargs):
 
 
 ###
-def print_progressbar(total, i):
+def print_progressbar(total, i, details = ""):
     """
     total : total iteration number.
     i : iteration count, starting from 0.
+    details : string you want to show next to the progress bar. e.g. current file name.
     """
     import math
     step = 25 / total
 
     # Print the progress bar
+    print("\r" + " " * 150, end="")
     print('\r' + f'Progress: '
         f"[{'=' * int((i+1) * step) + ' ' * (25 - int((i+1) * step))}]"
-        f"({math.floor((i+1) * 100 / (total))} %) ({i+1}/{total})",
+        f"({math.floor((i+1) * 100 / (total))} %) ({i+1}/{total}) " + details,
         end='')
-    if (i+1) == total: print("")
+    if (i+1) == total:
+        print("")
+
     
     
 ###
