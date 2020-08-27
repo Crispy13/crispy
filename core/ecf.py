@@ -14,9 +14,12 @@ import math
 from IPython.display import Audio, display
 
 logger = load_logger()
+pathsep = os.path.sep
+ps_re = pathsep if pathsep != "\\" else "\\\\"
+
 module_name = re.search("(^[^.\n]+).*$", __name__).group(1)
-module_root_path = re.search(f"(^.+{module_name})/[^\n/]+", __file__).group(1)
-sound_path = module_root_path + "/misc/sounds"
+module_root_path = re.search(f"(^.+{module_name}){ps_re}[^\n{ps_re}]+", __file__).group(1)
+sound_path = module_root_path + f"{pathsep}misc{pathsep}sounds"
 
 ### 
 sys_excepthook = sys.excepthook # Backup Original sys.excepthook
