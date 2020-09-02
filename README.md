@@ -1,6 +1,7 @@
 # Crispy13
 Functions for personal use
 
+## Default Logger
 This module have a default logger, you can add a file handler to the logger as the following:
 
 ```
