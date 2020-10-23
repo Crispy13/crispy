@@ -6,7 +6,7 @@
 #         https://stackoverflow.com/questions/47325506/making-python-loggers-log-all-stdout-and-stderr-messages
 
 
-import glob, re, os, shutil, sys
+import glob, re, os, shutil, sys, datetime
 from .eclogging import load_logger
 import time # For TimeChecker class.
 import numpy as np
@@ -37,7 +37,7 @@ def cus_excepthook(logger):
     Examples
     --------
     import sys
-    sys.excepthook = cus_exception(logger)
+    sys.excepthook = cus_excepthook(logger)
     
     """
     def _excepthook(etype, value, tb):
@@ -50,14 +50,23 @@ def cus_excepthook(logger):
 
 ###
 def exception_sound(logger, audio_path = sound_path + "/Nope.m4a"):
+    """
     
+    Parameters
+    ----------
+    
+    audio_path : None -> mute the exception sound
+                 a sound file path -> plays the file when an exception occurs
+    
+    """
     def _exception_sound(self, etype, value, tb, tb_offset=None):
         """
         https://stackoverflow.com/questions/40722417/play-sound-when-jupyter-notebook-cell-fails
         """
         self.showtraceback((etype, value, tb), tb_offset=tb_offset)
         logger.debug("Got exception.\n", exc_info= True)
-        display(Audio(audio_path, autoplay=True))
+        if audio_path is not None:
+            display(Audio(audio_path, autoplay=True))
     
     return _exception_sound
 
@@ -91,7 +100,7 @@ def print_progressbar(total, i, details = ""):
 ###
 def get_savepath(save_path=None):
     """
-    Get save path you want but tagged with suffix (_[0-9]+) if a file whose name is what you want already exists.
+    Get a file path you want if the file name already exists, it will be tagged with suffix (_[0-9]+).
     
     save_path : desired save path.
     """
@@ -157,17 +166,17 @@ class TimeChecker():
     def set_end(self):
         self.end=time.time()
     
-    def set_and_show(self):
-        self.end=time.time()
-        
-        return self.show_elapsed_time()
-    
     def show_elapsed_time(self):
         hours, rem = divmod(self.end - self.start, 3600)
         minutes, seconds = divmod(rem, 60)
         rs="{:0>2}:{:0>2}:{:05.2f}".format(int(hours),int(minutes),seconds)
         print(rs)        
         return rs
+    
+    def set_and_show(self):
+        self.end=time.time()
+        
+        return self.show_elapsed_time()
     
     
 ###
@@ -270,3 +279,53 @@ def flatten_dict(d):
         else:
             out[key] = val
     return out
+
+
+###
+def cds(string_format = "%y%m%d_%H%M"):
+    """
+    Returns current datetime string. 
+    
+    Parameters
+    ----------
+    string_format : string
+    """
+
+    return datetime.datetime.now().strftime(string_format)
+
+
+### Ref : https://stackoverflow.com/questions/19562916/print-progress-of-pool-map-async
+def track_job(job, total, update_interval=1):
+    """
+    Tracks map_async job.
+    
+    Parameters
+    ----------
+    job : AsyncResult object
+    
+    total : total number of jobs
+    
+    update_interval : interval of tracking
+    
+    """
+    while job._number_left > 0:
+        rc = total-(job._number_left*job._chunksize)
+        print_progressbar(total, rc)
+        time.sleep(update_interval)
+        
+        
+
+### Ref : https://stackoverflow.com/questions/14568647/create-zip-in-python
+def compress_to_zip(targetname, source):
+    
+    with zipfile.ZipFile(targetname, 'w', zipfile.ZIP_DEFLATED) as ziph:
+        abs_source = os.path.abspath(source)
+        for dirname, subdirs, files in os.walk(source):
+            for filename in files:
+                absname = os.path.abspath(os.path.join(dirname, filename))
+                arcname = absname[len(abs_source) + 1:]
+                print('zipping {} as {}'.format(os.path.join(dirname, filename),
+                                            arcname))
+                ziph.write(absname, arcname)
+    
+    return       

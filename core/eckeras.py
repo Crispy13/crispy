@@ -1,10 +1,11 @@
 from .eclogging import load_logger
-from keras import backend as K
-from keras.callbacks import Callback
+from tensorflow import keras
+from tensorflow.keras import backend as K
+from tensorflow.keras.callbacks import Callback
 import numpy as np
 import time
-from keras.optimizers import adam
-from keras.layers import Conv3D, Dense
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.layers import Conv3D, Dense
 from .ecf import *
 from .emri import *
 import pickle
@@ -407,3 +408,22 @@ class PruningCallback(Callback):
         # Save current pruningcallback instance to pkl file.
         pass
     
+
+###
+def set_weight_decay(model, alpha):
+    """
+    This function can be applied to Conv2D, Dense or DepthwiseConv2D
+    """
+    for layer in model.layers:
+        if isinstance(layer, keras.layers.DepthwiseConv2D):
+            layer.add_loss(lambda: keras.regularizers.l2(alpha)(layer.depthwise_kernel))
+        elif isinstance(layer, keras.layers.Conv2D) or isinstance(layer, keras.layers.Dense):
+            layer.add_loss(lambda: keras.regularizers.l2(alpha)(layer.kernel))
+        if hasattr(layer, 'bias_regularizer') and layer.use_bias:
+            layer.add_loss(lambda: keras.regularizers.l2(alpha)(layer.bias))
+
+            
+###            
+def csv_remove_duplicates(csv_path):
+    csv_p = pd.read_csv(csv_path)
+    csv_p.drop_duplicates(['epoch'], keep = 'last').to_csv(csv_path, index = False)

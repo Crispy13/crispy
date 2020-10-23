@@ -23,6 +23,11 @@ def pr_auc_score(y_test, y_score):
 def pr_curve(y_test, y_score):
     """
     plot precision-recall curve and return AUC of it.
+    
+    Parameters
+    ----------
+    y_test = [n_samples] shape
+    y_score = [n_samples] shape
     """
 
     precision, recall, _ = precision_recall_curve(y_test, y_score)
