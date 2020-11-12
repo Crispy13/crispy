@@ -21,4 +21,4 @@ Tested in jupyter lab
 get_ipython().set_custom_exc((Exception,), csp.exception_sound(csp.logger)) # Exception sound alert
 ```
 
-[ggc] : https://github.com/Crispy13/crispy/blob/master/examples/guided_grad_cam.ipynb
+[ggc]: https://github.com/Crispy13/crispy/blob/master/examples/guided_grad_cam.ipynb
