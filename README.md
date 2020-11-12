@@ -19,6 +19,6 @@ csp.logger.addHandler(csp.make_file_handler("path/log_file.log"))
 Tested in jupyter lab
 ```
 get_ipython().set_custom_exc((Exception,), csp.exception_sound(csp.logger)) # Exception sound alert
-
+```
 
 [ggc] : https://github.com/Crispy13/crispy/blob/master/examples/guided_grad_cam.ipynb
