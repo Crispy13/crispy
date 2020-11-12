@@ -11,6 +11,7 @@ Notebook examples using this repo are in /examples folder.
 
 <br><br><br>
 <hr>
+
 ## Default Logger
 This module have a default logger, you can add a file handler to the logger as the following:
 
