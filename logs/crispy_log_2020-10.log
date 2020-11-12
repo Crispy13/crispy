@@ -1,0 +1,1479 @@
+(Oct 31, 2020 12:04:49 - crispy - DEBUG) crispy logger was initialized.
+
+(Oct 31, 2020 12:04:52 - crispy - DEBUG) Test
+
+(Oct 31, 2020 12:04:52 - crispy - INFO) GPU is available.
+
+(Oct 31, 2020 12:04:58 - crispy - INFO) Intial weight was None.
+
+(Oct 31, 2020 12:04:58 - crispy - INFO) layer.trainable was set to True.
+
+(Oct 31, 2020 12:05:00 - crispy - DEBUG) file ext search result: None
+
+(Oct 31, 2020 12:05:00 - crispy - DEBUG) file name and file ext: 201031_1205_pruning_callback, 
+
+(Oct 31, 2020 12:05:00 - crispy - DEBUG) gl1: []
+
+(Oct 31, 2020 12:05:00 - crispy - DEBUG) re1: []
+
+(Oct 31, 2020 12:05:00 - crispy - INFO) crispy:savepath: 201031_1205_pruning_callback
+
+(Oct 31, 2020 12:05:01 - crispy - DEBUG) file ext search result: <re.Match object; span=(59, 63), match='.pkl'>
+
+(Oct 31, 2020 12:05:01 - crispy - DEBUG) file name and file ext: 201031_1205_pruning_callback\lottery-ticket_initial_weights, .pkl
+
+(Oct 31, 2020 12:05:01 - crispy - DEBUG) gl1: []
+
+(Oct 31, 2020 12:05:01 - crispy - DEBUG) re1: []
+
+(Oct 31, 2020 12:05:01 - crispy - INFO) crispy:savepath: 201031_1205_pruning_callback\lottery-ticket_initial_weights.pkl
+
+(Oct 31, 2020 12:05:08 - crispy - INFO) base percents : {'Conv2D': 0.2}
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) Global cutoffs: dict_items([('Conv2D', 0.007665542885661125)])
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) conv1_conv
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) 1719 out of 9408(18.3%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) conv2_block1_1_conv
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) 169 out of 4096(4.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) conv2_block1_2_conv
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) 3892 out of 36864(10.6%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) conv2_block1_0_conv
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) 898 out of 16384(5.5%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) conv2_block1_3_conv
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) 912 out of 16384(5.6%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) conv2_block2_1_conv
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) 953 out of 16384(5.8%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) conv2_block2_2_conv
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) 4131 out of 36864(11.2%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) conv2_block2_3_conv
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) 894 out of 16384(5.5%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) conv2_block3_1_conv
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) 923 out of 16384(5.6%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) conv2_block3_2_conv
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) 3948 out of 36864(10.7%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) conv2_block3_3_conv
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:11 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 867 out of 16384(5.3%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv3_block1_1_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 1992 out of 32768(6.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv3_block1_2_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 22228 out of 147456(15.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv3_block1_0_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 11363 out of 131072(8.7%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv3_block1_3_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 5202 out of 65536(7.9%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv3_block2_1_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 5196 out of 65536(7.9%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv3_block2_2_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 22254 out of 147456(15.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv3_block2_3_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 5199 out of 65536(7.9%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv3_block3_1_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 5169 out of 65536(7.9%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv3_block3_2_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 21823 out of 147456(14.8%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv3_block3_3_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 5069 out of 65536(7.7%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv3_block4_1_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 5249 out of 65536(8.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv3_block4_2_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 22048 out of 147456(15.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv3_block4_3_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 5042 out of 65536(7.7%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv4_block1_1_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 11248 out of 131072(8.6%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv4_block1_2_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 124834 out of 589824(21.2%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv4_block1_0_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 64139 out of 524288(12.2%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv4_block1_3_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 29337 out of 262144(11.2%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv4_block2_1_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 29257 out of 262144(11.2%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv4_block2_2_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 125236 out of 589824(21.2%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv4_block2_3_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 29229 out of 262144(11.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv4_block3_1_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 29357 out of 262144(11.2%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv4_block3_2_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 125320 out of 589824(21.2%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv4_block3_3_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 29362 out of 262144(11.2%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv4_block4_1_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 29313 out of 262144(11.2%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv4_block4_2_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 124705 out of 589824(21.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv4_block4_3_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 29641 out of 262144(11.3%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv4_block5_1_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 29220 out of 262144(11.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv4_block5_2_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 125370 out of 589824(21.3%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv4_block5_3_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 29260 out of 262144(11.2%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv4_block6_1_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 29678 out of 262144(11.3%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv4_block6_2_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 125141 out of 589824(21.2%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv4_block6_3_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 29333 out of 262144(11.2%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv5_block1_1_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 64110 out of 524288(12.2%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv5_block1_2_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) 708419 out of 2359296(30.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) conv5_block1_0_conv
+
+(Oct 31, 2020 12:05:12 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) 364376 out of 2097152(17.4%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) conv5_block1_3_conv
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) 165946 out of 1048576(15.8%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) conv5_block2_1_conv
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) 166275 out of 1048576(15.9%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) conv5_block2_2_conv
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) 709312 out of 2359296(30.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) conv5_block2_3_conv
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) 166004 out of 1048576(15.8%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) conv5_block3_1_conv
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) 166128 out of 1048576(15.8%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) conv5_block3_2_conv
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) 708306 out of 2359296(30.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) conv5_block3_3_conv
+
+(Oct 31, 2020 12:05:13 - crispy - INFO) Class name: Conv2D, Cutoff : 0.007665542885661125
+
+(Oct 31, 2020 12:05:14 - crispy - INFO) cutoff: 0.007665542885661125
+
+(Oct 31, 2020 12:05:14 - crispy - INFO) 165988 out of 1048576(15.8%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:14 - crispy - INFO) >> self.masks was newly set.
+
+(Oct 31, 2020 12:05:14 - crispy - DEBUG) file ext search result: <re.Match object; span=(55, 59), match='.pkl'>
+
+(Oct 31, 2020 12:05:14 - crispy - DEBUG) file name and file ext: 201031_1205_pruning_callback\1-th_save_pruning_callback, .pkl
+
+(Oct 31, 2020 12:05:14 - crispy - DEBUG) gl1: []
+
+(Oct 31, 2020 12:05:14 - crispy - DEBUG) re1: []
+
+(Oct 31, 2020 12:05:14 - crispy - INFO) crispy:savepath: 201031_1205_pruning_callback\1-th_save_pruning_callback.pkl
+
+(Oct 31, 2020 12:05:19 - crispy - INFO) >> N was set to 2.
+
+(Oct 31, 2020 12:05:19 - crispy - INFO) >> Base percents were reduced to {'conv1_conv': 0.044721359549995794, 'conv2_block1_1_conv': 0.044721359549995794, 'conv2_block1_2_conv': 0.044721359549995794, 'conv2_block1_0_conv': 0.044721359549995794, 'conv2_block1_3_conv': 0.044721359549995794, 'conv2_block2_1_conv': 0.044721359549995794, 'conv2_block2_2_conv': 0.044721359549995794, 'conv2_block2_3_conv': 0.044721359549995794, 'conv2_block3_1_conv': 0.044721359549995794, 'conv2_block3_2_conv': 0.044721359549995794, 'conv2_block3_3_conv': 0.044721359549995794, 'conv3_block1_1_conv': 0.044721359549995794, 'conv3_block1_2_conv': 0.044721359549995794, 'conv3_block1_0_conv': 0.044721359549995794, 'conv3_block1_3_conv': 0.044721359549995794, 'conv3_block2_1_conv': 0.044721359549995794, 'conv3_block2_2_conv': 0.044721359549995794, 'conv3_block2_3_conv': 0.044721359549995794, 'conv3_block3_1_conv': 0.044721359549995794, 'conv3_block3_2_conv': 0.044721359549995794, 'conv3_block3_3_conv': 0.044721359549995794, 'conv3_block4_1_conv': 0.044721359549995794, 'conv3_block4_2_conv': 0.044721359549995794, 'conv3_block4_3_conv': 0.044721359549995794, 'conv4_block1_1_conv': 0.044721359549995794, 'conv4_block1_2_conv': 0.044721359549995794, 'conv4_block1_0_conv': 0.044721359549995794, 'conv4_block1_3_conv': 0.044721359549995794, 'conv4_block2_1_conv': 0.044721359549995794, 'conv4_block2_2_conv': 0.044721359549995794, 'conv4_block2_3_conv': 0.044721359549995794, 'conv4_block3_1_conv': 0.044721359549995794, 'conv4_block3_2_conv': 0.044721359549995794, 'conv4_block3_3_conv': 0.044721359549995794, 'conv4_block4_1_conv': 0.044721359549995794, 'conv4_block4_2_conv': 0.044721359549995794, 'conv4_block4_3_conv': 0.044721359549995794, 'conv4_block5_1_conv': 0.044721359549995794, 'conv4_block5_2_conv': 0.044721359549995794, 'conv4_block5_3_conv': 0.044721359549995794, 'conv4_block6_1_conv': 0.044721359549995794, 'conv4_block6_2_conv': 0.044721359549995794, 'conv4_block6_3_conv': 0.044721359549995794, 'conv5_block1_1_conv': 0.044721359549995794, 'conv5_block1_2_conv': 0.044721359549995794, 'conv5_block1_0_conv': 0.044721359549995794, 'conv5_block1_3_conv': 0.044721359549995794, 'conv5_block2_1_conv': 0.044721359549995794, 'conv5_block2_2_conv': 0.044721359549995794, 'conv5_block2_3_conv': 0.044721359549995794, 'conv5_block3_1_conv': 0.044721359549995794, 'conv5_block3_2_conv': 0.044721359549995794, 'conv5_block3_3_conv': 0.044721359549995794}.
+
+(Oct 31, 2020 12:05:19 - crispy - INFO) >> Masks were applied to the model weights.
+
+(Oct 31, 2020 12:05:19 - crispy - INFO) >> self.weights was newly set.
+
+(Oct 31, 2020 12:05:25 - crispy - INFO) >> Initial weights were restored.
+
+(Oct 31, 2020 12:05:36 - crispy - INFO) base percents : {'Conv2D': 0.2}
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Global cutoffs: dict_items([('Conv2D', 0.013797048479318619)])
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv1_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 1324 out of 7689(17.2%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv2_block1_1_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 103 out of 3927(2.6%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv2_block1_2_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 3090 out of 32972(9.4%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv2_block1_0_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 775 out of 15486(5.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv2_block1_3_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 758 out of 15472(4.9%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv2_block2_1_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 730 out of 15431(4.7%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv2_block2_2_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 3060 out of 32733(9.3%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv2_block2_3_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 760 out of 15490(4.9%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv2_block3_1_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 732 out of 15461(4.7%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv2_block3_2_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 3175 out of 32916(9.6%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv2_block3_3_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 742 out of 15517(4.8%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv3_block1_1_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 1667 out of 30776(5.4%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv3_block1_2_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 17802 out of 125228(14.2%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv3_block1_0_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 8952 out of 119709(7.5%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv3_block1_3_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 4177 out of 60334(6.9%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv3_block2_1_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 4188 out of 60340(6.9%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv3_block2_2_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 17605 out of 125202(14.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv3_block2_3_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 4041 out of 60337(6.7%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv3_block3_1_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 4129 out of 60367(6.8%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv3_block3_2_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 17582 out of 125633(14.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv3_block3_3_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 4154 out of 60467(6.9%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv3_block4_1_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 4174 out of 60287(6.9%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv3_block4_2_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 17660 out of 125408(14.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv3_block4_3_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 4255 out of 60494(7.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv4_block1_1_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 9167 out of 119824(7.7%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv4_block1_2_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 100174 out of 464990(21.5%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv4_block1_0_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 51290 out of 460149(11.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv4_block1_3_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 23467 out of 232807(10.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv4_block2_1_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 23469 out of 232887(10.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv4_block2_2_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 100004 out of 464588(21.5%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv4_block2_3_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 23597 out of 232915(10.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv4_block3_1_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 23672 out of 232787(10.2%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv4_block3_2_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 100191 out of 464504(21.6%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv4_block3_3_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 23706 out of 232782(10.2%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv4_block4_1_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 23643 out of 232831(10.2%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv4_block4_2_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 100398 out of 465119(21.6%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv4_block4_3_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 23419 out of 232503(10.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv4_block5_1_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 23468 out of 232924(10.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv4_block5_2_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 100408 out of 464454(21.6%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv4_block5_3_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 23446 out of 232884(10.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv4_block6_1_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 23381 out of 232466(10.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv4_block6_2_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 99907 out of 464683(21.5%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv4_block6_3_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 23512 out of 232811(10.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv5_block1_1_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 51204 out of 460178(11.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv5_block1_2_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) 567377 out of 1650877(34.4%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) conv5_block1_0_conv
+
+(Oct 31, 2020 12:05:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) 291382 out of 1732776(16.8%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) conv5_block1_3_conv
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) 133059 out of 882630(15.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) conv5_block2_1_conv
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) 132712 out of 882301(15.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) conv5_block2_2_conv
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) 566442 out of 1649984(34.3%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) conv5_block2_3_conv
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) 132408 out of 882572(15.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) conv5_block3_1_conv
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) 133170 out of 882448(15.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) conv5_block3_2_conv
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) 566418 out of 1650990(34.3%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) conv5_block3_3_conv
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) Class name: Conv2D, Cutoff : 0.013797048479318619
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) cutoff: 0.013797048479318619
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) 132661 out of 882588(15.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) >> self.masks was newly set.
+
+(Oct 31, 2020 12:05:41 - crispy - DEBUG) file ext search result: <re.Match object; span=(55, 59), match='.pkl'>
+
+(Oct 31, 2020 12:05:41 - crispy - DEBUG) file name and file ext: 201031_1205_pruning_callback\2-th_save_pruning_callback, .pkl
+
+(Oct 31, 2020 12:05:41 - crispy - DEBUG) gl1: []
+
+(Oct 31, 2020 12:05:41 - crispy - DEBUG) re1: []
+
+(Oct 31, 2020 12:05:41 - crispy - INFO) crispy:savepath: 201031_1205_pruning_callback\2-th_save_pruning_callback.pkl
+
+(Oct 31, 2020 12:05:46 - crispy - INFO) >> N was set to 3.
+
+(Oct 31, 2020 12:05:46 - crispy - INFO) >> Base percents were reduced to {'conv1_conv': 0.027144176165949063, 'conv2_block1_1_conv': 0.027144176165949063, 'conv2_block1_2_conv': 0.027144176165949063, 'conv2_block1_0_conv': 0.027144176165949063, 'conv2_block1_3_conv': 0.027144176165949063, 'conv2_block2_1_conv': 0.027144176165949063, 'conv2_block2_2_conv': 0.027144176165949063, 'conv2_block2_3_conv': 0.027144176165949063, 'conv2_block3_1_conv': 0.027144176165949063, 'conv2_block3_2_conv': 0.027144176165949063, 'conv2_block3_3_conv': 0.027144176165949063, 'conv3_block1_1_conv': 0.027144176165949063, 'conv3_block1_2_conv': 0.027144176165949063, 'conv3_block1_0_conv': 0.027144176165949063, 'conv3_block1_3_conv': 0.027144176165949063, 'conv3_block2_1_conv': 0.027144176165949063, 'conv3_block2_2_conv': 0.027144176165949063, 'conv3_block2_3_conv': 0.027144176165949063, 'conv3_block3_1_conv': 0.027144176165949063, 'conv3_block3_2_conv': 0.027144176165949063, 'conv3_block3_3_conv': 0.027144176165949063, 'conv3_block4_1_conv': 0.027144176165949063, 'conv3_block4_2_conv': 0.027144176165949063, 'conv3_block4_3_conv': 0.027144176165949063, 'conv4_block1_1_conv': 0.027144176165949063, 'conv4_block1_2_conv': 0.027144176165949063, 'conv4_block1_0_conv': 0.027144176165949063, 'conv4_block1_3_conv': 0.027144176165949063, 'conv4_block2_1_conv': 0.027144176165949063, 'conv4_block2_2_conv': 0.027144176165949063, 'conv4_block2_3_conv': 0.027144176165949063, 'conv4_block3_1_conv': 0.027144176165949063, 'conv4_block3_2_conv': 0.027144176165949063, 'conv4_block3_3_conv': 0.027144176165949063, 'conv4_block4_1_conv': 0.027144176165949063, 'conv4_block4_2_conv': 0.027144176165949063, 'conv4_block4_3_conv': 0.027144176165949063, 'conv4_block5_1_conv': 0.027144176165949063, 'conv4_block5_2_conv': 0.027144176165949063, 'conv4_block5_3_conv': 0.027144176165949063, 'conv4_block6_1_conv': 0.027144176165949063, 'conv4_block6_2_conv': 0.027144176165949063, 'conv4_block6_3_conv': 0.027144176165949063, 'conv5_block1_1_conv': 0.027144176165949063, 'conv5_block1_2_conv': 0.027144176165949063, 'conv5_block1_0_conv': 0.027144176165949063, 'conv5_block1_3_conv': 0.027144176165949063, 'conv5_block2_1_conv': 0.027144176165949063, 'conv5_block2_2_conv': 0.027144176165949063, 'conv5_block2_3_conv': 0.027144176165949063, 'conv5_block3_1_conv': 0.027144176165949063, 'conv5_block3_2_conv': 0.027144176165949063, 'conv5_block3_3_conv': 0.027144176165949063}.
+
+(Oct 31, 2020 12:05:46 - crispy - INFO) >> Masks were applied to the model weights.
+
+(Oct 31, 2020 12:05:46 - crispy - INFO) >> self.weights was newly set.
+
+(Oct 31, 2020 12:05:50 - crispy - INFO) >> Initial weights were restored.
+
+(Oct 31, 2020 12:06:37 - crispy - INFO) base percents : {'Conv2D': 0.2}
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Global cutoffs: dict_items([('Conv2D', 0.018701108172535896)])
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv1_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 1089 out of 6365(17.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv2_block1_1_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 109 out of 3824(2.9%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv2_block1_2_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 2507 out of 29882(8.4%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv2_block1_0_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 585 out of 14711(4.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv2_block1_3_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 598 out of 14714(4.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv2_block2_1_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 632 out of 14701(4.3%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv2_block2_2_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 2622 out of 29673(8.8%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv2_block2_3_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 584 out of 14730(4.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv2_block3_1_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 574 out of 14729(3.9%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv2_block3_2_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 2485 out of 29741(8.4%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv2_block3_3_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 570 out of 14775(3.9%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv3_block1_1_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 1323 out of 29109(4.5%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv3_block1_2_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 14193 out of 107426(13.2%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv3_block1_0_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 7500 out of 110757(6.8%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv3_block1_3_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 3313 out of 56157(5.9%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv3_block2_1_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 3244 out of 56152(5.8%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv3_block2_2_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 14264 out of 107597(13.3%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv3_block2_3_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 3327 out of 56296(5.9%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv3_block3_1_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 3226 out of 56238(5.7%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv3_block3_2_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 14087 out of 108051(13.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv3_block3_3_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 3383 out of 56313(6.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv3_block4_1_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 3330 out of 56113(5.9%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv3_block4_2_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 14390 out of 107748(13.4%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv3_block4_3_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 3186 out of 56239(5.7%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv4_block1_1_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 7098 out of 110657(6.4%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv4_block1_2_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 80524 out of 364816(22.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv4_block1_0_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 41253 out of 408859(10.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv4_block1_3_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) 18739 out of 209340(9.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) conv4_block2_1_conv
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:39 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) 18629 out of 209418(8.9%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) conv4_block2_2_conv
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) 80160 out of 364584(22.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) conv4_block2_3_conv
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) 18650 out of 209318(8.9%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) conv4_block3_1_conv
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) 18732 out of 209115(9.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) conv4_block3_2_conv
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) 80251 out of 364313(22.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) conv4_block3_3_conv
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) 18814 out of 209076(9.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) conv4_block4_1_conv
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) 18531 out of 209188(8.9%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) conv4_block4_2_conv
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) 80588 out of 364721(22.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) conv4_block4_3_conv
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) 18738 out of 209084(9.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) conv4_block5_1_conv
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) 18707 out of 209456(8.9%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) conv4_block5_2_conv
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) 80225 out of 364046(22.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) conv4_block5_3_conv
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) 18707 out of 209438(8.9%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) conv4_block6_1_conv
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) 18790 out of 209085(9.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) conv4_block6_2_conv
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) 80172 out of 364776(22.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) conv4_block6_3_conv
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) 18788 out of 209299(9.0%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) conv5_block1_1_conv
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) 41214 out of 408974(10.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) conv5_block1_2_conv
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) 453618 out of 1083500(41.9%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) conv5_block1_0_conv
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) 232351 out of 1441394(16.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) conv5_block1_3_conv
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) 105623 out of 749571(14.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) conv5_block2_1_conv
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) 106316 out of 749589(14.2%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) conv5_block2_2_conv
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:40 - crispy - INFO) 453300 out of 1083542(41.8%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:41 - crispy - INFO) conv5_block2_3_conv
+
+(Oct 31, 2020 12:06:41 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:41 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:41 - crispy - INFO) 105909 out of 750164(14.1%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:41 - crispy - INFO) conv5_block3_1_conv
+
+(Oct 31, 2020 12:06:41 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:41 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:41 - crispy - INFO) 106463 out of 749278(14.2%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:41 - crispy - INFO) conv5_block3_2_conv
+
+(Oct 31, 2020 12:06:41 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:41 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:41 - crispy - INFO) 453790 out of 1084572(41.8%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:41 - crispy - INFO) conv5_block3_3_conv
+
+(Oct 31, 2020 12:06:41 - crispy - INFO) Class name: Conv2D, Cutoff : 0.018701108172535896
+
+(Oct 31, 2020 12:06:41 - crispy - INFO) cutoff: 0.018701108172535896
+
+(Oct 31, 2020 12:06:41 - crispy - INFO) 106428 out of 749927(14.2%) parameters will be pruned.
+
+(Oct 31, 2020 12:06:41 - crispy - INFO) >> self.masks was newly set.
+
+(Oct 31, 2020 12:06:41 - crispy - DEBUG) file ext search result: <re.Match object; span=(55, 59), match='.pkl'>
+
+(Oct 31, 2020 12:06:41 - crispy - DEBUG) file name and file ext: 201031_1205_pruning_callback\3-th_save_pruning_callback, .pkl
+
+(Oct 31, 2020 12:06:41 - crispy - DEBUG) gl1: []
+
+(Oct 31, 2020 12:06:41 - crispy - DEBUG) re1: []
+
+(Oct 31, 2020 12:06:41 - crispy - INFO) crispy:savepath: 201031_1205_pruning_callback\3-th_save_pruning_callback.pkl
+
+(Oct 31, 2020 12:06:47 - crispy - INFO) >> N was set to 4.
+
+(Oct 31, 2020 12:06:47 - crispy - INFO) >> Base percents were reduced to {'conv1_conv': 0.021147425268811283, 'conv2_block1_1_conv': 0.021147425268811283, 'conv2_block1_2_conv': 0.021147425268811283, 'conv2_block1_0_conv': 0.021147425268811283, 'conv2_block1_3_conv': 0.021147425268811283, 'conv2_block2_1_conv': 0.021147425268811283, 'conv2_block2_2_conv': 0.021147425268811283, 'conv2_block2_3_conv': 0.021147425268811283, 'conv2_block3_1_conv': 0.021147425268811283, 'conv2_block3_2_conv': 0.021147425268811283, 'conv2_block3_3_conv': 0.021147425268811283, 'conv3_block1_1_conv': 0.021147425268811283, 'conv3_block1_2_conv': 0.021147425268811283, 'conv3_block1_0_conv': 0.021147425268811283, 'conv3_block1_3_conv': 0.021147425268811283, 'conv3_block2_1_conv': 0.021147425268811283, 'conv3_block2_2_conv': 0.021147425268811283, 'conv3_block2_3_conv': 0.021147425268811283, 'conv3_block3_1_conv': 0.021147425268811283, 'conv3_block3_2_conv': 0.021147425268811283, 'conv3_block3_3_conv': 0.021147425268811283, 'conv3_block4_1_conv': 0.021147425268811283, 'conv3_block4_2_conv': 0.021147425268811283, 'conv3_block4_3_conv': 0.021147425268811283, 'conv4_block1_1_conv': 0.021147425268811283, 'conv4_block1_2_conv': 0.021147425268811283, 'conv4_block1_0_conv': 0.021147425268811283, 'conv4_block1_3_conv': 0.021147425268811283, 'conv4_block2_1_conv': 0.021147425268811283, 'conv4_block2_2_conv': 0.021147425268811283, 'conv4_block2_3_conv': 0.021147425268811283, 'conv4_block3_1_conv': 0.021147425268811283, 'conv4_block3_2_conv': 0.021147425268811283, 'conv4_block3_3_conv': 0.021147425268811283, 'conv4_block4_1_conv': 0.021147425268811283, 'conv4_block4_2_conv': 0.021147425268811283, 'conv4_block4_3_conv': 0.021147425268811283, 'conv4_block5_1_conv': 0.021147425268811283, 'conv4_block5_2_conv': 0.021147425268811283, 'conv4_block5_3_conv': 0.021147425268811283, 'conv4_block6_1_conv': 0.021147425268811283, 'conv4_block6_2_conv': 0.021147425268811283, 'conv4_block6_3_conv': 0.021147425268811283, 'conv5_block1_1_conv': 0.021147425268811283, 'conv5_block1_2_conv': 0.021147425268811283, 'conv5_block1_0_conv': 0.021147425268811283, 'conv5_block1_3_conv': 0.021147425268811283, 'conv5_block2_1_conv': 0.021147425268811283, 'conv5_block2_2_conv': 0.021147425268811283, 'conv5_block2_3_conv': 0.021147425268811283, 'conv5_block3_1_conv': 0.021147425268811283, 'conv5_block3_2_conv': 0.021147425268811283, 'conv5_block3_3_conv': 0.021147425268811283}.
+
+(Oct 31, 2020 12:06:47 - crispy - INFO) >> Masks were applied to the model weights.
+
+(Oct 31, 2020 12:06:47 - crispy - INFO) >> self.weights was newly set.
+
+(Oct 31, 2020 12:06:52 - crispy - INFO) >> Initial weights were restored.
+
+(Oct 31, 2020 12:07:19 - crispy - DEBUG) crispy logger was initialized.
+
+(Oct 31, 2020 12:07:21 - crispy - DEBUG) Test
+
+(Oct 31, 2020 12:07:22 - crispy - INFO) GPU is available.
+
+(Oct 31, 2020 12:07:25 - crispy - INFO) Intial weight was None.
+
+(Oct 31, 2020 12:07:25 - crispy - INFO) layer.trainable was set to True.
+
+(Oct 31, 2020 12:07:25 - crispy - DEBUG) file ext search result: None
+
+(Oct 31, 2020 12:07:25 - crispy - DEBUG) file name and file ext: 201031_1207_pruning_callback, 
+
+(Oct 31, 2020 12:07:25 - crispy - DEBUG) gl1: []
+
+(Oct 31, 2020 12:07:25 - crispy - DEBUG) re1: []
+
+(Oct 31, 2020 12:07:25 - crispy - INFO) crispy:savepath: 201031_1207_pruning_callback
+
+(Oct 31, 2020 12:07:26 - crispy - DEBUG) file ext search result: <re.Match object; span=(59, 63), match='.pkl'>
+
+(Oct 31, 2020 12:07:26 - crispy - DEBUG) file name and file ext: 201031_1207_pruning_callback\lottery-ticket_initial_weights, .pkl
+
+(Oct 31, 2020 12:07:26 - crispy - DEBUG) gl1: []
+
+(Oct 31, 2020 12:07:26 - crispy - DEBUG) re1: []
+
+(Oct 31, 2020 12:07:26 - crispy - INFO) crispy:savepath: 201031_1207_pruning_callback\lottery-ticket_initial_weights.pkl
+
+(Oct 31, 2020 12:07:27 - crispy - INFO) > 1th loop.
+
+(Oct 31, 2020 12:07:27 - crispy - INFO) 'EarlyStopping_c1' object has no attribute 'best_epoch', initial epoch was set to 0.
+
+(Oct 31, 2020 12:07:27 - crispy - INFO) > 1th loop.
+
+(Oct 31, 2020 12:07:33 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-23-f82cee98eece>", line 23, in <module>
+    callbacks = [earlystopping_cb, pc, loglogger, checkpoint_cb_w, csvlogger])
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\training.py", line 1100, in fit
+    tmp_logs = self.train_function(iterator)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\def_function.py", line 828, in __call__
+    result = self._call(*args, **kwds)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\def_function.py", line 888, in _call
+    return self._stateless_fn(*args, **kwds)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\function.py", line 2943, in __call__
+    filtered_flat_args, captured_inputs=graph_function.captured_inputs)  # pylint: disable=protected-access
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\function.py", line 1919, in _call_flat
+    ctx, args, cancellation_manager=cancellation_manager))
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\function.py", line 560, in call
+    ctx=ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 60, in quick_execute
+    inputs, attrs, num_outputs)
+tensorflow.python.framework.errors_impl.UnknownError: 2 root error(s) found.
+  (0) Unknown:  Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node ResNet-50/conv1_conv/Conv2D (defined at <ipython-input-23-f82cee98eece>:23) ]]
+	 [[assert_greater_equal/Assert/AssertGuard/pivot_f/_3/_33]]
+  (1) Unknown:  Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node ResNet-50/conv1_conv/Conv2D (defined at <ipython-input-23-f82cee98eece>:23) ]]
+0 successful operations.
+0 derived errors ignored. [Op:__inference_train_function_15393]
+
+Function call stack:
+train_function -> train_function
+
+(Oct 31, 2020 22:12:10 - crispy - DEBUG) crispy logger was initialized.
+
+(Oct 31, 2020 22:12:12 - crispy - DEBUG) Test
+
+(Oct 31, 2020 22:12:12 - crispy - INFO) GPU is available.
+
+(Oct 31, 2020 22:12:14 - crispy - INFO) Intial weight was None.
+
+(Oct 31, 2020 22:12:14 - crispy - INFO) layer.trainable was set to True.
+
+(Oct 31, 2020 22:12:15 - crispy - DEBUG) file ext search result: None
+
+(Oct 31, 2020 22:12:15 - crispy - DEBUG) file name and file ext: 201031_2212_pruning_callback, 
+
+(Oct 31, 2020 22:12:15 - crispy - DEBUG) gl1: []
+
+(Oct 31, 2020 22:12:15 - crispy - DEBUG) re1: []
+
+(Oct 31, 2020 22:12:15 - crispy - INFO) crispy:savepath: 201031_2212_pruning_callback
+
+(Oct 31, 2020 22:12:15 - crispy - DEBUG) file ext search result: <re.Match object; span=(59, 63), match='.pkl'>
+
+(Oct 31, 2020 22:12:15 - crispy - DEBUG) file name and file ext: 201031_2212_pruning_callback\lottery-ticket_initial_weights, .pkl
+
+(Oct 31, 2020 22:12:15 - crispy - DEBUG) gl1: []
+
+(Oct 31, 2020 22:12:15 - crispy - DEBUG) re1: []
+
+(Oct 31, 2020 22:12:15 - crispy - INFO) crispy:savepath: 201031_2212_pruning_callback\lottery-ticket_initial_weights.pkl
+

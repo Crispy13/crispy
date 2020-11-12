@@ -1,0 +1,2659 @@
+(Nov 02, 2020 20:40:56 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 02, 2020 20:40:59 - crispy - DEBUG) Test
+
+(Nov 02, 2020 20:40:59 - crispy - INFO) GPU is available.
+
+(Nov 02, 2020 20:41:13 - crispy - INFO) Intial weight was None.
+
+(Nov 02, 2020 20:41:13 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 11, 2020 14:41:56 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 11, 2020 14:41:58 - crispy - DEBUG) Test
+
+(Nov 11, 2020 14:41:58 - crispy - INFO) GPU is available.
+
+(Nov 11, 2020 14:42:02 - crispy - INFO) Intial weight was None.
+
+(Nov 11, 2020 14:42:05 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 11, 2020 14:42:21 - crispy - DEBUG) file ext search result: None
+
+(Nov 11, 2020 14:42:21 - crispy - DEBUG) file name and file ext: 201111_1442_pruning_callback, 
+
+(Nov 11, 2020 14:42:21 - crispy - DEBUG) gl1: []
+
+(Nov 11, 2020 14:42:21 - crispy - DEBUG) re1: []
+
+(Nov 11, 2020 14:42:21 - crispy - INFO) crispy:savepath: 201111_1442_pruning_callback
+
+(Nov 11, 2020 14:42:21 - crispy - DEBUG) file ext search result: <re.Match object; span=(59, 63), match='.pkl'>
+
+(Nov 11, 2020 14:42:21 - crispy - DEBUG) file name and file ext: 201111_1442_pruning_callback\lottery-ticket_initial_weights, .pkl
+
+(Nov 11, 2020 14:42:21 - crispy - DEBUG) gl1: []
+
+(Nov 11, 2020 14:42:21 - crispy - DEBUG) re1: []
+
+(Nov 11, 2020 14:42:21 - crispy - INFO) crispy:savepath: 201111_1442_pruning_callback\lottery-ticket_initial_weights.pkl
+
+(Nov 11, 2020 14:55:22 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-27-4ea859baf3c3>", line 1, in <module>
+    model.summary("conv5_block3_out")
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\training.py", line 2384, in summary
+    print_fn=print_fn)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\utils\layer_utils.py", line 174, in print_summary
+    positions = [int(line_length * p) for p in positions]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\utils\layer_utils.py", line 174, in <listcomp>
+    positions = [int(line_length * p) for p in positions]
+TypeError: can't multiply sequence by non-int of type 'float'
+(Nov 11, 2020 15:17:23 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-32-72430e40acf4>", line 1, in <module>
+    last_conv_layer_name("conv5_block3_out")
+NameError: name 'last_conv_layer_name' is not defined
+(Nov 11, 2020 15:18:25 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3114, in run_cell_async
+    code_ast = compiler.ast_parse(cell, filename=cell_name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\compilerop.py", line 101, in ast_parse
+    return compile(source, filename, symbol, self.flags | PyCF_ONLY_AST, 1)
+  File "<ipython-input-36-c737b9857a8d>", line 1
+    classifier_model/
+                    ^
+SyntaxError: invalid syntax
+(Nov 11, 2020 15:19:20 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-40-675a3994d56a>", line 18, in <module>
+    last_conv_layer_output = last_conv_layer_model(img_array)
+NameError: name 'img_array' is not defined
+(Nov 11, 2020 15:20:06 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-43-9cb3f2f0b57c>", line 1, in <module>
+    valid_set.take(1)[0]
+TypeError: 'TakeDataset' object is not subscriptable
+(Nov 11, 2020 15:22:34 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-45-3bd9e62c5332>", line 3, in <module>
+    img_array = next(valid_set.take(1))[0]
+TypeError: 'TakeDataset' object is not an iterator
+(Nov 11, 2020 15:24:16 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-48-675a3994d56a>", line 18, in <module>
+    last_conv_layer_output = last_conv_layer_model(img_array)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 560, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\layers\convolutional.py", line 248, in call
+    outputs = self._convolution_op(inputs, self.kernel)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\util\dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1020, in convolution_v2
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1150, in convolution_internal
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 2604, in _conv2d_expanded_batch
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 931, in conv2d
+    _ops.raise_from_not_ok_status(e, name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\framework\ops.py", line 6862, in raise_from_not_ok_status
+    six.raise_from(core._status_to_exception(e.code, message), None)
+  File "<string>", line 3, in raise_from
+tensorflow.python.framework.errors_impl.InternalError: Blas SGEMM launch failed : m=200704, n=64, k=64 [Op:Conv2D]
+(Nov 11, 2020 15:27:19 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 11, 2020 15:27:21 - crispy - DEBUG) Test
+
+(Nov 11, 2020 15:27:21 - crispy - INFO) GPU is available.
+
+(Nov 11, 2020 15:27:22 - crispy - INFO) Intial weight was None.
+
+(Nov 11, 2020 15:27:22 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 11, 2020 15:27:23 - crispy - DEBUG) file ext search result: None
+
+(Nov 11, 2020 15:27:23 - crispy - DEBUG) file name and file ext: 201111_1527_pruning_callback, 
+
+(Nov 11, 2020 15:27:23 - crispy - DEBUG) gl1: []
+
+(Nov 11, 2020 15:27:23 - crispy - DEBUG) re1: []
+
+(Nov 11, 2020 15:27:23 - crispy - INFO) crispy:savepath: 201111_1527_pruning_callback
+
+(Nov 11, 2020 15:27:23 - crispy - DEBUG) file ext search result: <re.Match object; span=(59, 63), match='.pkl'>
+
+(Nov 11, 2020 15:27:23 - crispy - DEBUG) file name and file ext: 201111_1527_pruning_callback\lottery-ticket_initial_weights, .pkl
+
+(Nov 11, 2020 15:27:23 - crispy - DEBUG) gl1: []
+
+(Nov 11, 2020 15:27:23 - crispy - DEBUG) re1: []
+
+(Nov 11, 2020 15:27:23 - crispy - INFO) crispy:savepath: 201111_1527_pruning_callback\lottery-ticket_initial_weights.pkl
+
+(Nov 11, 2020 15:28:39 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-30-5ee78bb5bf2b>", line 32, in <module>
+    pooled_grads = pooled_grads.numpy()
+NameError: name 'pooled_grads' is not defined
+(Nov 11, 2020 15:42:54 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-56-cf4a6acbd4d2>", line 4, in <module>
+    plt.matshow(heatmap)
+NameError: name 'plt' is not defined
+(Nov 11, 2020 15:43:46 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-59-cf02610ea246>", line 1, in <module>
+    plt.imshow(img_array)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\matplotlib\pyplot.py", line 2730, in imshow
+    **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\matplotlib\__init__.py", line 1438, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\matplotlib\axes\_axes.py", line 5523, in imshow
+    im.set_data(X)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\matplotlib\image.py", line 710, in set_data
+    .format(self._A.shape))
+TypeError: Invalid shape (1, 224, 224, 3) for image data
+(Nov 11, 2020 15:50:23 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-69-cf4a6acbd4d2>", line 1, in <module>
+    heatmap = make_gradcam_heatmap(img_array, model, last_conv_layer_name, classifier_layer_names)
+  File "<ipython-input-25-b4f703b1f542>", line 32, in make_gradcam_heatmap
+    last_conv_layer_output = last_conv_layer_model(img_array)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 560, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 993, in __call__
+    input_spec.assert_input_compatibility(self.input_spec, inputs, self.name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\input_spec.py", line 223, in assert_input_compatibility
+    str(tuple(shape)))
+ValueError: Input 0 of layer conv1_pad is incompatible with the layer: expected ndim=4, found ndim=3. Full shape received: (1, 224, 3)
+(Nov 11, 2020 16:04:19 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-94-f5cfa0ad9c60>", line 1, in <module>
+    aft_img.max()
+AttributeError: 'tensorflow.python.framework.ops.EagerTensor' object has no attribute 'max'
+(Nov 11, 2020 16:29:33 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 11, 2020 16:29:35 - crispy - DEBUG) Test
+
+(Nov 11, 2020 16:29:35 - crispy - INFO) GPU is available.
+
+(Nov 11, 2020 16:30:02 - crispy - INFO) Intial weight was None.
+
+(Nov 11, 2020 16:30:18 - crispy - INFO) Intial weight was None.
+
+(Nov 11, 2020 16:30:22 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 11, 2020 16:30:44 - crispy - DEBUG) file ext search result: None
+
+(Nov 11, 2020 16:30:44 - crispy - DEBUG) file name and file ext: 201111_1630_pruning_callback, 
+
+(Nov 11, 2020 16:30:44 - crispy - DEBUG) gl1: []
+
+(Nov 11, 2020 16:30:44 - crispy - DEBUG) re1: []
+
+(Nov 11, 2020 16:30:44 - crispy - INFO) crispy:savepath: 201111_1630_pruning_callback
+
+(Nov 11, 2020 16:30:44 - crispy - DEBUG) file ext search result: <re.Match object; span=(59, 63), match='.pkl'>
+
+(Nov 11, 2020 16:30:44 - crispy - DEBUG) file name and file ext: 201111_1630_pruning_callback\lottery-ticket_initial_weights, .pkl
+
+(Nov 11, 2020 16:30:44 - crispy - DEBUG) gl1: []
+
+(Nov 11, 2020 16:30:44 - crispy - DEBUG) re1: []
+
+(Nov 11, 2020 16:30:44 - crispy - INFO) crispy:savepath: 201111_1630_pruning_callback\lottery-ticket_initial_weights.pkl
+
+(Nov 11, 2020 16:33:16 - crispy - INFO) > 1th loop.
+
+(Nov 11, 2020 16:33:16 - crispy - INFO) 'EarlyStopping_c1' object has no attribute 'best_epoch', initial epoch was set to 0.
+
+(Nov 11, 2020 16:33:16 - crispy - INFO) > 1th loop.
+
+(Nov 11, 2020 16:34:30 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 11, 2020 16:34:32 - crispy - DEBUG) Test
+
+(Nov 11, 2020 16:34:32 - crispy - INFO) GPU is available.
+
+(Nov 11, 2020 16:34:34 - crispy - INFO) Intial weight was None.
+
+(Nov 11, 2020 16:34:34 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 11, 2020 16:34:34 - crispy - DEBUG) file ext search result: None
+
+(Nov 11, 2020 16:34:34 - crispy - DEBUG) file name and file ext: 201111_1634_pruning_callback, 
+
+(Nov 11, 2020 16:34:34 - crispy - DEBUG) gl1: []
+
+(Nov 11, 2020 16:34:34 - crispy - DEBUG) re1: []
+
+(Nov 11, 2020 16:34:34 - crispy - INFO) crispy:savepath: 201111_1634_pruning_callback
+
+(Nov 11, 2020 16:34:35 - crispy - DEBUG) file ext search result: <re.Match object; span=(59, 63), match='.pkl'>
+
+(Nov 11, 2020 16:34:35 - crispy - DEBUG) file name and file ext: 201111_1634_pruning_callback\lottery-ticket_initial_weights, .pkl
+
+(Nov 11, 2020 16:34:35 - crispy - DEBUG) gl1: []
+
+(Nov 11, 2020 16:34:35 - crispy - DEBUG) re1: []
+
+(Nov 11, 2020 16:34:35 - crispy - INFO) crispy:savepath: 201111_1634_pruning_callback\lottery-ticket_initial_weights.pkl
+
+(Nov 11, 2020 16:41:18 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 11, 2020 16:41:20 - crispy - DEBUG) Test
+
+(Nov 11, 2020 16:41:20 - crispy - INFO) GPU is available.
+
+(Nov 11, 2020 16:41:22 - crispy - INFO) Intial weight was None.
+
+(Nov 11, 2020 16:41:22 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 11, 2020 16:41:22 - crispy - DEBUG) file ext search result: None
+
+(Nov 11, 2020 16:41:22 - crispy - DEBUG) file name and file ext: 201111_1641_pruning_callback, 
+
+(Nov 11, 2020 16:41:22 - crispy - DEBUG) gl1: []
+
+(Nov 11, 2020 16:41:22 - crispy - DEBUG) re1: []
+
+(Nov 11, 2020 16:41:22 - crispy - INFO) crispy:savepath: 201111_1641_pruning_callback
+
+(Nov 11, 2020 16:41:22 - crispy - DEBUG) file ext search result: <re.Match object; span=(59, 63), match='.pkl'>
+
+(Nov 11, 2020 16:41:22 - crispy - DEBUG) file name and file ext: 201111_1641_pruning_callback\lottery-ticket_initial_weights, .pkl
+
+(Nov 11, 2020 16:41:22 - crispy - DEBUG) gl1: []
+
+(Nov 11, 2020 16:41:22 - crispy - DEBUG) re1: []
+
+(Nov 11, 2020 16:41:22 - crispy - INFO) crispy:savepath: 201111_1641_pruning_callback\lottery-ticket_initial_weights.pkl
+
+(Nov 11, 2020 16:42:06 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-31-2ebb3ebd8d03>", line 7, in <module>
+    print(aft_img.max())
+AttributeError: 'tensorflow.python.framework.ops.EagerTensor' object has no attribute 'max'
+(Nov 11, 2020 16:54:36 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-67-e442dda50e7e>", line 1, in <module>
+    for i,d in enumerate(vad.take(10).map(preprocess)):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\data\ops\dataset_ops.py", line 1805, in map
+    return MapDataset(self, map_func, preserve_cardinality=True)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\data\ops\dataset_ops.py", line 4207, in __init__
+    use_legacy_function=use_legacy_function)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\data\ops\dataset_ops.py", line 3525, in __init__
+    self._function = wrapper_fn.get_concrete_function()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\function.py", line 3052, in get_concrete_function
+    *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\function.py", line 3019, in _get_concrete_function_garbage_collected
+    graph_function, _ = self._maybe_define_function(args, kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\function.py", line 3361, in _maybe_define_function
+    graph_function = self._create_graph_function(args, kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\function.py", line 3206, in _create_graph_function
+    capture_by_value=self._capture_by_value),
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\framework\func_graph.py", line 990, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\data\ops\dataset_ops.py", line 3518, in wrapper_fn
+    ret = _wrapper_helper(*args)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\data\ops\dataset_ops.py", line 3453, in _wrapper_helper
+    ret = autograph.tf_convert(func, ag_ctx)(*nested_args)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\def_function.py", line 828, in __call__
+    result = self._call(*args, **kwds)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\def_function.py", line 871, in _call
+    self._initialize(args, kwds, add_initializers_to=initializers)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\def_function.py", line 726, in _initialize
+    *args, **kwds))
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\function.py", line 2969, in _get_concrete_function_internal_garbage_collected
+    graph_function, _ = self._maybe_define_function(args, kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\function.py", line 3361, in _maybe_define_function
+    graph_function = self._create_graph_function(args, kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\function.py", line 3206, in _create_graph_function
+    capture_by_value=self._capture_by_value),
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\framework\func_graph.py", line 990, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\def_function.py", line 634, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\framework\func_graph.py", line 977, in wrapper
+    raise e.ag_error_metadata.to_exception(e)
+UnboundLocalError: in user code:
+
+    <ipython-input-66-4717587de87a>:3 preprocess  *
+        image_3ch = tf.image.grayscale_to_rgb(resized_image)
+
+    UnboundLocalError: local variable 'resized_image' referenced before assignment
+
+(Nov 11, 2020 16:54:56 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-69-e442dda50e7e>", line 3, in <module>
+    heatmap = make_gradcam_heatmap(img_array, model, last_conv_layer_name, classifier_layer_names)
+  File "<ipython-input-57-b4f703b1f542>", line 32, in make_gradcam_heatmap
+    last_conv_layer_output = last_conv_layer_model(img_array)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 560, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 993, in __call__
+    input_spec.assert_input_compatibility(self.input_spec, inputs, self.name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\input_spec.py", line 223, in assert_input_compatibility
+    str(tuple(shape)))
+ValueError: Input 0 of layer conv1_pad is incompatible with the layer: expected ndim=4, found ndim=3. Full shape received: (224, 224, 3)
+(Nov 11, 2020 17:03:05 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-75-61432194eb43>", line 9, in <module>
+    axs[i, 1].imshow()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\matplotlib\__init__.py", line 1438, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+TypeError: imshow() missing 1 required positional argument: 'X'
+(Nov 11, 2020 17:03:27 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-76-4455393ee7a8>", line 9, in <module>
+    axs[i, 1].imshow(img_array)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\matplotlib\__init__.py", line 1438, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\matplotlib\axes\_axes.py", line 5523, in imshow
+    im.set_data(X)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\matplotlib\image.py", line 710, in set_data
+    .format(self._A.shape))
+TypeError: Invalid shape (1, 224, 224, 3) for image data
+(Nov 11, 2020 17:06:20 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-81-002c7ef12336>", line 5, in <module>
+    heatmap = resize(heatmap, [224,224])
+SystemError: new style getargs format but argument is not a tuple
+(Nov 11, 2020 20:02:04 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-95-82d01d04e3a4>", line 1, in <module>
+    model.layers[-1].output.op.inputs
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\keras_tensor.py", line 251, in op
+    raise TypeError('Keras symbolic inputs/outputs do not '
+TypeError: Keras symbolic inputs/outputs do not implement `op`. You may be trying to pass Keras symbolic inputs/outputs to a TF API that does not register dispatching, preventing Keras from automatically converting the API call to a lambda layer in the Functional Model.
+(Nov 11, 2020 20:02:33 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-96-61d138b4c390>", line 1, in <module>
+    model.layers[-1].output.op.inputs[0]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\keras_tensor.py", line 251, in op
+    raise TypeError('Keras symbolic inputs/outputs do not '
+TypeError: Keras symbolic inputs/outputs do not implement `op`. You may be trying to pass Keras symbolic inputs/outputs to a TF API that does not register dispatching, preventing Keras from automatically converting the API call to a lambda layer in the Functional Model.
+(Nov 11, 2020 20:03:29 - crispy - DEBUG) Test
+
+(Nov 11, 2020 20:03:29 - crispy - INFO) GPU is available.
+
+(Nov 11, 2020 20:03:30 - crispy - INFO) Intial weight was None.
+
+(Nov 11, 2020 20:03:30 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 11, 2020 20:03:31 - crispy - DEBUG) file ext search result: None
+
+(Nov 11, 2020 20:03:31 - crispy - DEBUG) file name and file ext: 201111_2003_pruning_callback, 
+
+(Nov 11, 2020 20:03:31 - crispy - DEBUG) gl1: []
+
+(Nov 11, 2020 20:03:31 - crispy - DEBUG) re1: []
+
+(Nov 11, 2020 20:03:31 - crispy - INFO) crispy:savepath: 201111_2003_pruning_callback
+
+(Nov 11, 2020 20:03:31 - crispy - DEBUG) file ext search result: <re.Match object; span=(59, 63), match='.pkl'>
+
+(Nov 11, 2020 20:03:31 - crispy - DEBUG) file name and file ext: 201111_2003_pruning_callback\lottery-ticket_initial_weights, .pkl
+
+(Nov 11, 2020 20:03:31 - crispy - DEBUG) gl1: []
+
+(Nov 11, 2020 20:03:31 - crispy - DEBUG) re1: []
+
+(Nov 11, 2020 20:03:31 - crispy - INFO) crispy:savepath: 201111_2003_pruning_callback\lottery-ticket_initial_weights.pkl
+
+(Nov 11, 2020 20:03:32 - crispy - INFO) > 1th loop.
+
+(Nov 11, 2020 20:03:32 - crispy - INFO) 'EarlyStopping_c1' object has no attribute 'best_epoch', initial epoch was set to 0.
+
+(Nov 11, 2020 20:03:32 - crispy - INFO) > 1th loop.
+
+(Nov 11, 2020 20:03:54 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-123-f82cee98eece>", line 23, in <module>
+    callbacks = [earlystopping_cb, pc, loglogger, checkpoint_cb_w, csvlogger])
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\training.py", line 1100, in fit
+    tmp_logs = self.train_function(iterator)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\def_function.py", line 828, in __call__
+    result = self._call(*args, **kwds)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\def_function.py", line 888, in _call
+    return self._stateless_fn(*args, **kwds)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\function.py", line 2943, in __call__
+    filtered_flat_args, captured_inputs=graph_function.captured_inputs)  # pylint: disable=protected-access
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\function.py", line 1919, in _call_flat
+    ctx, args, cancellation_manager=cancellation_manager))
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\function.py", line 560, in call
+    ctx=ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 60, in quick_execute
+    inputs, attrs, num_outputs)
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: 2 root error(s) found.
+  (0) Resource exhausted:  OOM when allocating tensor with shape[64,512,28,28] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+	 [[node ResNet-50/conv3_block3_3_conv/Conv2D (defined at <ipython-input-123-f82cee98eece>:23) ]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+
+	 [[assert_greater_equal/All/_20]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+
+  (1) Resource exhausted:  OOM when allocating tensor with shape[64,512,28,28] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+	 [[node ResNet-50/conv3_block3_3_conv/Conv2D (defined at <ipython-input-123-f82cee98eece>:23) ]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+
+0 successful operations.
+0 derived errors ignored. [Op:__inference_train_function_180855]
+
+Function call stack:
+train_function -> train_function
+
+(Nov 11, 2020 20:03:57 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-124-61d138b4c390>", line 1, in <module>
+    model.layers[-1].output.op.inputs[0]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\keras_tensor.py", line 251, in op
+    raise TypeError('Keras symbolic inputs/outputs do not '
+TypeError: Keras symbolic inputs/outputs do not implement `op`. You may be trying to pass Keras symbolic inputs/outputs to a TF API that does not register dispatching, preventing Keras from automatically converting the API call to a lambda layer in the Functional Model.
+(Nov 11, 2020 20:33:20 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 11, 2020 20:33:23 - crispy - DEBUG) Test
+
+(Nov 11, 2020 20:33:23 - crispy - INFO) GPU is available.
+
+(Nov 11, 2020 20:33:24 - crispy - INFO) Intial weight was None.
+
+(Nov 11, 2020 20:33:24 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 11, 2020 20:47:32 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-28-9bf280934d8f>", line 1, in <module>
+    build_guided_model("resnet50_model_val_loss-0.3517.h5")
+  File "<ipython-input-27-15c87e0b651c>", line 9, in build_guided_model
+    g = tf.get_default_graph()
+AttributeError: module 'tensorflow' has no attribute 'get_default_graph'
+(Nov 11, 2020 20:50:41 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-30-9bf280934d8f>", line 1, in <module>
+    build_guided_model("resnet50_model_val_loss-0.3517.h5")
+  File "<ipython-input-29-031919512305>", line 10, in build_guided_model
+    with g.gradient_override_map({'Relu': 'GuidedBackProp'}):
+AttributeError: '_GeneratorContextManager' object has no attribute 'gradient_override_map'
+(Nov 11, 2020 20:52:35 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-35-1ec11fd2d7bd>", line 12, in <module>
+    guided_backprop(guided_model)
+TypeError: guided_backprop() missing 1 required positional argument: 'layer_name'
+(Nov 11, 2020 20:58:33 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-42-c2f6912e570e>", line 13, in <module>
+    grads=guided_backprop(guided_model, "conv5_block3_out")
+TypeError: guided_backprop() missing 1 required positional argument: 'layer_name'
+(Nov 11, 2020 20:58:40 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-43-d4a8502b471d>", line 13, in <module>
+    grads=guided_backprop(guided_model, img_array, "conv5_block3_out")
+  File "<ipython-input-43-d4a8502b471d>", line 7, in guided_backprop
+    part_output = part_model(img)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 560, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py", line 831, in __call__
+    outputs = self.call(cast_inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\layers\convolutional.py", line 248, in call
+    outputs = self._convolution_op(inputs, self.kernel)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\util\dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1020, in convolution_v2
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1150, in convolution_internal
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 2604, in _conv2d_expanded_batch
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 938, in conv2d
+    data_format=data_format, dilations=dilations, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 1018, in conv2d_eager_fallback
+    _attr_T, _inputs_T = _execute.args_to_matching_eager([input, filter], ctx, [_dtypes.half, _dtypes.bfloat16, _dtypes.float32, _dtypes.float64, _dtypes.int32, ])
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in args_to_matching_eager
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in <listcomp>
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\profiler\trace.py", line 163, in wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\framework\ops.py", line 1540, in convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1992, in _dense_var_to_tensor
+    return var._dense_var_to_tensor(dtype=dtype, name=name, as_ref=as_ref)  # pylint: disable=protected-access
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1393, in _dense_var_to_tensor
+    return self.value()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 565, in value
+    return self._read_variable_op()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 672, in _read_variable_op
+    result = read_and_set_handle()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 663, in read_and_set_handle
+    self._handle, self._dtype)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 478, in read_variable_op
+    resource, dtype=dtype, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 503, in read_variable_op_eager_fallback
+    attrs=_attrs, ctx=ctx, name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 75, in quick_execute
+    raise e
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 60, in quick_execute
+    inputs, attrs, num_outputs)
+TypeError: An op outside of the function building code is being passed
+a "Graph" tensor. It is possible to have Graph tensors
+leak out of the function building context by including a
+tf.init_scope in your function building code.
+For example, the following function will fail:
+  @tf.function
+  def has_init_scope():
+    my_constant = tf.constant(1.)
+    with tf.init_scope():
+      added = my_constant * 2
+The graph tensor has name: conv1_conv/kernel:0
+(Nov 11, 2020 21:00:36 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-44-ec6e02802a40>", line 13, in <module>
+    grads=guided_backprop(model, img_array, "conv5_block3_out")
+  File "<ipython-input-44-ec6e02802a40>", line 6, in guided_backprop
+    tape.watch(model_input)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\backprop.py", line 906, in watch
+    type(t)))
+ValueError: Passed in object of type <class 'tensorflow.python.keras.engine.keras_tensor.KerasTensor'>, not tf.Tensor
+(Nov 11, 2020 21:01:31 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-45-d4a8502b471d>", line 13, in <module>
+    grads=guided_backprop(guided_model, img_array, "conv5_block3_out")
+  File "<ipython-input-45-d4a8502b471d>", line 7, in guided_backprop
+    part_output = part_model(img)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 560, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py", line 831, in __call__
+    outputs = self.call(cast_inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\layers\convolutional.py", line 248, in call
+    outputs = self._convolution_op(inputs, self.kernel)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\util\dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1020, in convolution_v2
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1150, in convolution_internal
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 2604, in _conv2d_expanded_batch
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 938, in conv2d
+    data_format=data_format, dilations=dilations, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 1018, in conv2d_eager_fallback
+    _attr_T, _inputs_T = _execute.args_to_matching_eager([input, filter], ctx, [_dtypes.half, _dtypes.bfloat16, _dtypes.float32, _dtypes.float64, _dtypes.int32, ])
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in args_to_matching_eager
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in <listcomp>
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\profiler\trace.py", line 163, in wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\framework\ops.py", line 1540, in convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1992, in _dense_var_to_tensor
+    return var._dense_var_to_tensor(dtype=dtype, name=name, as_ref=as_ref)  # pylint: disable=protected-access
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1393, in _dense_var_to_tensor
+    return self.value()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 565, in value
+    return self._read_variable_op()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 672, in _read_variable_op
+    result = read_and_set_handle()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 663, in read_and_set_handle
+    self._handle, self._dtype)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 478, in read_variable_op
+    resource, dtype=dtype, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 503, in read_variable_op_eager_fallback
+    attrs=_attrs, ctx=ctx, name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 75, in quick_execute
+    raise e
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 60, in quick_execute
+    inputs, attrs, num_outputs)
+TypeError: An op outside of the function building code is being passed
+a "Graph" tensor. It is possible to have Graph tensors
+leak out of the function building context by including a
+tf.init_scope in your function building code.
+For example, the following function will fail:
+  @tf.function
+  def has_init_scope():
+    my_constant = tf.constant(1.)
+    with tf.init_scope():
+      added = my_constant * 2
+The graph tensor has name: conv1_conv/kernel:0
+(Nov 11, 2020 21:08:20 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-47-3e431d2fdc66>", line 1, in <module>
+    part_model = keras.Model(model.inputs, model.get_layer(layer_name).output)
+NameError: name 'layer_name' is not defined
+(Nov 11, 2020 21:08:35 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-49-3e431d2fdc66>", line 6, in <module>
+    part_output = part_model(img)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 560, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py", line 831, in __call__
+    outputs = self.call(cast_inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\layers\convolutional.py", line 248, in call
+    outputs = self._convolution_op(inputs, self.kernel)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\util\dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1020, in convolution_v2
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1150, in convolution_internal
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 2604, in _conv2d_expanded_batch
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 938, in conv2d
+    data_format=data_format, dilations=dilations, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 1018, in conv2d_eager_fallback
+    _attr_T, _inputs_T = _execute.args_to_matching_eager([input, filter], ctx, [_dtypes.half, _dtypes.bfloat16, _dtypes.float32, _dtypes.float64, _dtypes.int32, ])
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in args_to_matching_eager
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in <listcomp>
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\profiler\trace.py", line 163, in wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\framework\ops.py", line 1540, in convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1992, in _dense_var_to_tensor
+    return var._dense_var_to_tensor(dtype=dtype, name=name, as_ref=as_ref)  # pylint: disable=protected-access
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1393, in _dense_var_to_tensor
+    return self.value()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 565, in value
+    return self._read_variable_op()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 672, in _read_variable_op
+    result = read_and_set_handle()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 663, in read_and_set_handle
+    self._handle, self._dtype)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 478, in read_variable_op
+    resource, dtype=dtype, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 503, in read_variable_op_eager_fallback
+    attrs=_attrs, ctx=ctx, name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 75, in quick_execute
+    raise e
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 60, in quick_execute
+    inputs, attrs, num_outputs)
+TypeError: An op outside of the function building code is being passed
+a "Graph" tensor. It is possible to have Graph tensors
+leak out of the function building context by including a
+tf.init_scope in your function building code.
+For example, the following function will fail:
+  @tf.function
+  def has_init_scope():
+    my_constant = tf.constant(1.)
+    with tf.init_scope():
+      added = my_constant * 2
+The graph tensor has name: conv1_conv/kernel:0
+(Nov 11, 2020 21:12:51 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-50-289afcbb82df>", line 14, in <module>
+    grads=guided_backprop(guided_model, img_array, "conv5_block3_out")
+  File "<ipython-input-50-289afcbb82df>", line 8, in guided_backprop
+    part_output = part_model(img)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 560, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py", line 831, in __call__
+    outputs = self.call(cast_inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\layers\convolutional.py", line 248, in call
+    outputs = self._convolution_op(inputs, self.kernel)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\util\dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1020, in convolution_v2
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1150, in convolution_internal
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 2604, in _conv2d_expanded_batch
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 938, in conv2d
+    data_format=data_format, dilations=dilations, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 1018, in conv2d_eager_fallback
+    _attr_T, _inputs_T = _execute.args_to_matching_eager([input, filter], ctx, [_dtypes.half, _dtypes.bfloat16, _dtypes.float32, _dtypes.float64, _dtypes.int32, ])
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in args_to_matching_eager
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in <listcomp>
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\profiler\trace.py", line 163, in wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\framework\ops.py", line 1540, in convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1992, in _dense_var_to_tensor
+    return var._dense_var_to_tensor(dtype=dtype, name=name, as_ref=as_ref)  # pylint: disable=protected-access
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1393, in _dense_var_to_tensor
+    return self.value()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 565, in value
+    return self._read_variable_op()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 672, in _read_variable_op
+    result = read_and_set_handle()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 663, in read_and_set_handle
+    self._handle, self._dtype)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 478, in read_variable_op
+    resource, dtype=dtype, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 503, in read_variable_op_eager_fallback
+    attrs=_attrs, ctx=ctx, name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 75, in quick_execute
+    raise e
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 60, in quick_execute
+    inputs, attrs, num_outputs)
+TypeError: An op outside of the function building code is being passed
+a "Graph" tensor. It is possible to have Graph tensors
+leak out of the function building context by including a
+tf.init_scope in your function building code.
+For example, the following function will fail:
+  @tf.function
+  def has_init_scope():
+    my_constant = tf.constant(1.)
+    with tf.init_scope():
+      added = my_constant * 2
+The graph tensor has name: conv1_conv/kernel:0
+(Nov 11, 2020 21:20:54 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-53-b5b9a2df2307>", line 16, in <module>
+    grads=guided_backprop(guided_model, img_array, "conv5_block3_out")
+  File "<ipython-input-53-b5b9a2df2307>", line 10, in guided_backprop
+    part_output = part_model(img)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 560, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py", line 831, in __call__
+    outputs = self.call(cast_inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\layers\convolutional.py", line 248, in call
+    outputs = self._convolution_op(inputs, self.kernel)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\util\dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1020, in convolution_v2
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1150, in convolution_internal
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 2604, in _conv2d_expanded_batch
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 938, in conv2d
+    data_format=data_format, dilations=dilations, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 1018, in conv2d_eager_fallback
+    _attr_T, _inputs_T = _execute.args_to_matching_eager([input, filter], ctx, [_dtypes.half, _dtypes.bfloat16, _dtypes.float32, _dtypes.float64, _dtypes.int32, ])
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in args_to_matching_eager
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in <listcomp>
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\profiler\trace.py", line 163, in wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\framework\ops.py", line 1540, in convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1992, in _dense_var_to_tensor
+    return var._dense_var_to_tensor(dtype=dtype, name=name, as_ref=as_ref)  # pylint: disable=protected-access
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1393, in _dense_var_to_tensor
+    return self.value()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 565, in value
+    return self._read_variable_op()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 672, in _read_variable_op
+    result = read_and_set_handle()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 663, in read_and_set_handle
+    self._handle, self._dtype)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 478, in read_variable_op
+    resource, dtype=dtype, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 503, in read_variable_op_eager_fallback
+    attrs=_attrs, ctx=ctx, name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 75, in quick_execute
+    raise e
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 60, in quick_execute
+    inputs, attrs, num_outputs)
+TypeError: An op outside of the function building code is being passed
+a "Graph" tensor. It is possible to have Graph tensors
+leak out of the function building context by including a
+tf.init_scope in your function building code.
+For example, the following function will fail:
+  @tf.function
+  def has_init_scope():
+    my_constant = tf.constant(1.)
+    with tf.init_scope():
+      added = my_constant * 2
+The graph tensor has name: conv1_conv/kernel:0
+(Nov 11, 2020 21:21:56 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-55-15c5fe6de282>", line 6, in <module>
+    part_output = part_model(img)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 560, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py", line 831, in __call__
+    outputs = self.call(cast_inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\layers\convolutional.py", line 248, in call
+    outputs = self._convolution_op(inputs, self.kernel)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\util\dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1020, in convolution_v2
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1150, in convolution_internal
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 2604, in _conv2d_expanded_batch
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 938, in conv2d
+    data_format=data_format, dilations=dilations, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 1018, in conv2d_eager_fallback
+    _attr_T, _inputs_T = _execute.args_to_matching_eager([input, filter], ctx, [_dtypes.half, _dtypes.bfloat16, _dtypes.float32, _dtypes.float64, _dtypes.int32, ])
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in args_to_matching_eager
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in <listcomp>
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\profiler\trace.py", line 163, in wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\framework\ops.py", line 1540, in convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1992, in _dense_var_to_tensor
+    return var._dense_var_to_tensor(dtype=dtype, name=name, as_ref=as_ref)  # pylint: disable=protected-access
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1393, in _dense_var_to_tensor
+    return self.value()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 565, in value
+    return self._read_variable_op()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 672, in _read_variable_op
+    result = read_and_set_handle()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 663, in read_and_set_handle
+    self._handle, self._dtype)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 478, in read_variable_op
+    resource, dtype=dtype, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 503, in read_variable_op_eager_fallback
+    attrs=_attrs, ctx=ctx, name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 75, in quick_execute
+    raise e
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 60, in quick_execute
+    inputs, attrs, num_outputs)
+TypeError: An op outside of the function building code is being passed
+a "Graph" tensor. It is possible to have Graph tensors
+leak out of the function building context by including a
+tf.init_scope in your function building code.
+For example, the following function will fail:
+  @tf.function
+  def has_init_scope():
+    my_constant = tf.constant(1.)
+    with tf.init_scope():
+      added = my_constant * 2
+The graph tensor has name: conv1_conv/kernel:0
+(Nov 11, 2020 21:22:00 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-56-42e9eedaea39>", line 16, in <module>
+    grads=guided_backprop(guided_model, img_array, "conv5_block3_out")
+  File "<ipython-input-56-42e9eedaea39>", line 10, in guided_backprop
+    part_output = part_model(img)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 560, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py", line 831, in __call__
+    outputs = self.call(cast_inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\layers\convolutional.py", line 248, in call
+    outputs = self._convolution_op(inputs, self.kernel)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\util\dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1020, in convolution_v2
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1150, in convolution_internal
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 2604, in _conv2d_expanded_batch
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 938, in conv2d
+    data_format=data_format, dilations=dilations, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 1018, in conv2d_eager_fallback
+    _attr_T, _inputs_T = _execute.args_to_matching_eager([input, filter], ctx, [_dtypes.half, _dtypes.bfloat16, _dtypes.float32, _dtypes.float64, _dtypes.int32, ])
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in args_to_matching_eager
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in <listcomp>
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\profiler\trace.py", line 163, in wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\framework\ops.py", line 1540, in convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1992, in _dense_var_to_tensor
+    return var._dense_var_to_tensor(dtype=dtype, name=name, as_ref=as_ref)  # pylint: disable=protected-access
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1393, in _dense_var_to_tensor
+    return self.value()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 565, in value
+    return self._read_variable_op()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 672, in _read_variable_op
+    result = read_and_set_handle()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 663, in read_and_set_handle
+    self._handle, self._dtype)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 478, in read_variable_op
+    resource, dtype=dtype, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 503, in read_variable_op_eager_fallback
+    attrs=_attrs, ctx=ctx, name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 75, in quick_execute
+    raise e
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 60, in quick_execute
+    inputs, attrs, num_outputs)
+TypeError: An op outside of the function building code is being passed
+a "Graph" tensor. It is possible to have Graph tensors
+leak out of the function building context by including a
+tf.init_scope in your function building code.
+For example, the following function will fail:
+  @tf.function
+  def has_init_scope():
+    my_constant = tf.constant(1.)
+    with tf.init_scope():
+      added = my_constant * 2
+The graph tensor has name: conv1_conv/kernel:0
+(Nov 11, 2020 21:24:45 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-57-79de7b58a58e>", line 16, in <module>
+    grads=guided_backprop(guided_model, img_array, "conv5_block3_out")
+  File "<ipython-input-57-79de7b58a58e>", line 10, in guided_backprop
+    part_output = part_model(img)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 560, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py", line 831, in __call__
+    outputs = self.call(cast_inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\layers\convolutional.py", line 248, in call
+    outputs = self._convolution_op(inputs, self.kernel)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\util\dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1020, in convolution_v2
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1150, in convolution_internal
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 2604, in _conv2d_expanded_batch
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 938, in conv2d
+    data_format=data_format, dilations=dilations, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 1018, in conv2d_eager_fallback
+    _attr_T, _inputs_T = _execute.args_to_matching_eager([input, filter], ctx, [_dtypes.half, _dtypes.bfloat16, _dtypes.float32, _dtypes.float64, _dtypes.int32, ])
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in args_to_matching_eager
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in <listcomp>
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\profiler\trace.py", line 163, in wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\framework\ops.py", line 1540, in convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1992, in _dense_var_to_tensor
+    return var._dense_var_to_tensor(dtype=dtype, name=name, as_ref=as_ref)  # pylint: disable=protected-access
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1393, in _dense_var_to_tensor
+    return self.value()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 565, in value
+    return self._read_variable_op()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 672, in _read_variable_op
+    result = read_and_set_handle()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 663, in read_and_set_handle
+    self._handle, self._dtype)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 478, in read_variable_op
+    resource, dtype=dtype, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 503, in read_variable_op_eager_fallback
+    attrs=_attrs, ctx=ctx, name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 75, in quick_execute
+    raise e
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 60, in quick_execute
+    inputs, attrs, num_outputs)
+TypeError: An op outside of the function building code is being passed
+a "Graph" tensor. It is possible to have Graph tensors
+leak out of the function building context by including a
+tf.init_scope in your function building code.
+For example, the following function will fail:
+  @tf.function
+  def has_init_scope():
+    my_constant = tf.constant(1.)
+    with tf.init_scope():
+      added = my_constant * 2
+The graph tensor has name: conv1_conv/kernel:0
+(Nov 11, 2020 21:25:43 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 11, 2020 21:25:45 - crispy - DEBUG) Test
+
+(Nov 11, 2020 21:25:45 - crispy - INFO) GPU is available.
+
+(Nov 11, 2020 21:26:04 - crispy - INFO) Intial weight was None.
+
+(Nov 11, 2020 21:26:04 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 11, 2020 21:26:42 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-29-42e9eedaea39>", line 16, in <module>
+    grads=guided_backprop(guided_model, img_array, "conv5_block3_out")
+  File "<ipython-input-29-42e9eedaea39>", line 10, in guided_backprop
+    part_output = part_model(img)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 560, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py", line 831, in __call__
+    outputs = self.call(cast_inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\layers\convolutional.py", line 248, in call
+    outputs = self._convolution_op(inputs, self.kernel)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\util\dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1020, in convolution_v2
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1150, in convolution_internal
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 2604, in _conv2d_expanded_batch
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 938, in conv2d
+    data_format=data_format, dilations=dilations, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 1018, in conv2d_eager_fallback
+    _attr_T, _inputs_T = _execute.args_to_matching_eager([input, filter], ctx, [_dtypes.half, _dtypes.bfloat16, _dtypes.float32, _dtypes.float64, _dtypes.int32, ])
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in args_to_matching_eager
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in <listcomp>
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\profiler\trace.py", line 163, in wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\framework\ops.py", line 1540, in convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1992, in _dense_var_to_tensor
+    return var._dense_var_to_tensor(dtype=dtype, name=name, as_ref=as_ref)  # pylint: disable=protected-access
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1393, in _dense_var_to_tensor
+    return self.value()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 565, in value
+    return self._read_variable_op()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 672, in _read_variable_op
+    result = read_and_set_handle()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 663, in read_and_set_handle
+    self._handle, self._dtype)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 478, in read_variable_op
+    resource, dtype=dtype, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 503, in read_variable_op_eager_fallback
+    attrs=_attrs, ctx=ctx, name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 75, in quick_execute
+    raise e
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 60, in quick_execute
+    inputs, attrs, num_outputs)
+TypeError: An op outside of the function building code is being passed
+a "Graph" tensor. It is possible to have Graph tensors
+leak out of the function building context by including a
+tf.init_scope in your function building code.
+For example, the following function will fail:
+  @tf.function
+  def has_init_scope():
+    my_constant = tf.constant(1.)
+    with tf.init_scope():
+      added = my_constant * 2
+The graph tensor has name: conv1_conv/kernel:0
+(Nov 11, 2020 21:27:04 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 11, 2020 21:27:06 - crispy - DEBUG) Test
+
+(Nov 11, 2020 21:27:07 - crispy - INFO) GPU is available.
+
+(Nov 11, 2020 21:27:08 - crispy - INFO) Intial weight was None.
+
+(Nov 11, 2020 21:27:08 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 11, 2020 21:27:49 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-27-92edfcd15ed8>", line 16, in <module>
+    grads=guided_backprop(guided_model, vad.take(1).map(preprocess), "conv5_block3_out")
+  File "<ipython-input-27-92edfcd15ed8>", line 10, in guided_backprop
+    part_output = part_model(img)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 993, in __call__
+    input_spec.assert_input_compatibility(self.input_spec, inputs, self.name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\input_spec.py", line 201, in assert_input_compatibility
+    raise TypeError('Inputs to a layer should be tensors. Got: %s' % (x,))
+TypeError: Inputs to a layer should be tensors. Got: <MapDataset shapes: ((224, 224, 3), ()), types: (tf.float32, tf.int64)>
+(Nov 11, 2020 21:28:15 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-28-3efc49d4e9c9>", line 16, in <module>
+    grads=guided_backprop(guided_model, vad.take(1).map(preprocess), "conv5_block3_out")
+  File "<ipython-input-28-3efc49d4e9c9>", line 10, in guided_backprop
+    part_output = part_model.predict(img)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\training.py", line 1629, in predict
+    tmp_batch_outputs = self.predict_function(iterator)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\def_function.py", line 828, in __call__
+    result = self._call(*args, **kwds)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\def_function.py", line 871, in _call
+    self._initialize(args, kwds, add_initializers_to=initializers)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\def_function.py", line 726, in _initialize
+    *args, **kwds))
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\function.py", line 2969, in _get_concrete_function_internal_garbage_collected
+    graph_function, _ = self._maybe_define_function(args, kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\function.py", line 3361, in _maybe_define_function
+    graph_function = self._create_graph_function(args, kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\function.py", line 3206, in _create_graph_function
+    capture_by_value=self._capture_by_value),
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\framework\func_graph.py", line 990, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\def_function.py", line 634, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\framework\func_graph.py", line 977, in wrapper
+    raise e.ag_error_metadata.to_exception(e)
+ValueError: in user code:
+
+    C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\training.py:1478 predict_function  *
+        return step_function(self, iterator)
+    C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\training.py:1468 step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\distribute\distribute_lib.py:1259 run
+        return self._extended.call_for_each_replica(fn, args=args, kwargs=kwargs)
+    C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\distribute\distribute_lib.py:2730 call_for_each_replica
+        return self._call_for_each_replica(fn, args, kwargs)
+    C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\distribute\distribute_lib.py:3417 _call_for_each_replica
+        return fn(*args, **kwargs)
+    C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\training.py:1461 run_step  **
+        outputs = model.predict_step(data)
+    C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\training.py:1434 predict_step
+        return self(x, training=False)
+    C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py:1007 __call__
+        outputs = call_fn(inputs, *args, **kwargs)
+    C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py:425 call
+        inputs, training=training, mask=mask)
+    C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py:560 _run_internal_graph
+        outputs = node.layer(*args, **kwargs)
+    C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py:761 __call__
+        self.name)
+    C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\input_spec.py:223 assert_input_compatibility
+        str(tuple(shape)))
+
+    ValueError: Input 0 of layer conv1_pad is incompatible with the layer: expected ndim=4, found ndim=3. Full shape received: (224, 224, 3)
+
+(Nov 11, 2020 21:28:42 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-29-20755bbc2019>", line 16, in <module>
+    grads=guided_backprop(guided_model, next(iter(vad.take(1).map(preprocess))), "conv5_block3_out")
+  File "<ipython-input-29-20755bbc2019>", line 10, in guided_backprop
+    part_output = part_model(img)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 993, in __call__
+    input_spec.assert_input_compatibility(self.input_spec, inputs, self.name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\input_spec.py", line 207, in assert_input_compatibility
+    ' input tensors. Inputs received: ' + str(inputs))
+ValueError: Layer model_2 expects 1 input(s), but it received 2 input tensors. Inputs received: [<tf.Tensor: shape=(224, 224, 3), dtype=float32, numpy=
+array([[[ -85.72472   ,  -98.56471   , -105.46571   ],
+        [ -85.939     ,  -98.779     , -105.68      ],
+        [ -85.939     ,  -98.779     , -105.68      ],
+        ...,
+        [  13.061691  ,    0.22169495,   -6.679306  ],
+        [  67.57647   ,   54.736473  ,   47.835472  ],
+        [  93.02714   ,   80.18714   ,   73.28614   ]],
+
+       [[ -85.939     ,  -98.779     , -105.68      ],
+        [ -85.939     ,  -98.779     , -105.68      ],
+        [ -85.939     ,  -98.779     , -105.68      ],
+        ...,
+        [   8.179024  ,   -4.6609726 ,  -11.561974  ],
+        [  64.07647   ,   51.236473  ,   44.335472  ],
+        [  85.42347   ,   72.58347   ,   65.68247   ]],
+
+       [[ -86.86758   ,  -99.70757   , -106.608574  ],
+        [ -86.939     ,  -99.779     , -106.68      ],
+        [ -86.939     ,  -99.779     , -106.68      ],
+        ...,
+        [   6.2045975 ,   -6.635399  ,  -13.5364    ],
+        [  60.56118   ,   47.721184  ,   40.820183  ],
+        [  80.84727   ,   68.00727   ,   61.10627   ]],
+
+       ...,
+
+       [[  66.86204   ,   54.02204   ,   47.12104   ],
+        [  75.72935   ,   62.88935   ,   55.98835   ],
+        [  83.06104   ,   70.22105   ,   63.320045  ],
+        ...,
+        [ 115.13247   ,  102.29247   ,   95.39147   ],
+        [ 115.72941   ,  102.88941   ,   95.98841   ],
+        [ 116.84664   ,  104.006645  ,   97.105644  ]],
+
+       [[  70.63242   ,   57.792427  ,   50.891426  ],
+        [  80.00486   ,   67.16486   ,   60.263863  ],
+        [  85.34676   ,   72.50677   ,   65.60577   ],
+        ...,
+        [ 114.77535   ,  101.935356  ,   95.034355  ],
+        [ 115.41811   ,  102.57812   ,   95.67712   ],
+        [ 117.27535   ,  104.435356  ,   97.534355  ]],
+
+       [[  74.418144  ,   61.578148  ,   54.677147  ],
+        [  82.91309   ,   70.0731    ,   63.172096  ],
+        [  87.98957   ,   75.149574  ,   68.24857   ],
+        ...,
+        [ 115.07632   ,  102.23632   ,   95.33532   ],
+        [ 117.061     ,  104.221     ,   97.32      ],
+        [ 116.70406   ,  103.86407   ,   96.963066  ]]], dtype=float32)>, <tf.Tensor: shape=(), dtype=int64, numpy=0>]
+(Nov 11, 2020 21:28:50 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-30-8f09007a782a>", line 16, in <module>
+    grads=guided_backprop(guided_model, next(iter(vad.take(1).map(preprocess)))[0], "conv5_block3_out")
+  File "<ipython-input-30-8f09007a782a>", line 10, in guided_backprop
+    part_output = part_model(img)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 560, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py", line 831, in __call__
+    outputs = self.call(cast_inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\layers\convolutional.py", line 2881, in call
+    inputs, padding=self.padding, data_format=self.data_format)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\util\dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\backend.py", line 3449, in spatial_2d_padding
+    return array_ops.pad(x, pattern)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\util\dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\array_ops.py", line 3422, in pad
+    result = gen_array_ops.pad(tensor, paddings, name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_array_ops.py", line 6479, in pad
+    input, paddings, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_array_ops.py", line 6504, in pad_eager_fallback
+    ctx=ctx, name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 60, in quick_execute
+    inputs, attrs, num_outputs)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: The first dimension of paddings must be the rank of inputs[4,2] [224,224,3] [Op:Pad]
+(Nov 11, 2020 21:29:31 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-31-c365875f0937>", line 17, in <module>
+    grads=guided_backprop(guided_model, next(iter(vad.take(1).map(preprocess)))[0], "conv5_block3_out")
+  File "<ipython-input-31-c365875f0937>", line 11, in guided_backprop
+    part_output = part_model(img)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 560, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py", line 831, in __call__
+    outputs = self.call(cast_inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\layers\convolutional.py", line 2881, in call
+    inputs, padding=self.padding, data_format=self.data_format)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\util\dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\backend.py", line 3449, in spatial_2d_padding
+    return array_ops.pad(x, pattern)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\util\dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\array_ops.py", line 3422, in pad
+    result = gen_array_ops.pad(tensor, paddings, name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_array_ops.py", line 6479, in pad
+    input, paddings, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_array_ops.py", line 6504, in pad_eager_fallback
+    ctx=ctx, name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 60, in quick_execute
+    inputs, attrs, num_outputs)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: The first dimension of paddings must be the rank of inputs[4,2] [224,224,3] [Op:Pad]
+(Nov 11, 2020 21:33:05 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-39-a4c9fa9167dc>", line 1, in <module>
+    part_output(part_model(img_array))
+NameError: name 'part_output' is not defined
+(Nov 11, 2020 21:33:10 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-40-ffce8bf7e7a5>", line 1, in <module>
+    part_output = part_model(img_array)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 560, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py", line 831, in __call__
+    outputs = self.call(cast_inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\layers\convolutional.py", line 248, in call
+    outputs = self._convolution_op(inputs, self.kernel)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\util\dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1020, in convolution_v2
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1150, in convolution_internal
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 2604, in _conv2d_expanded_batch
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 938, in conv2d
+    data_format=data_format, dilations=dilations, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 1018, in conv2d_eager_fallback
+    _attr_T, _inputs_T = _execute.args_to_matching_eager([input, filter], ctx, [_dtypes.half, _dtypes.bfloat16, _dtypes.float32, _dtypes.float64, _dtypes.int32, ])
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in args_to_matching_eager
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in <listcomp>
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\profiler\trace.py", line 163, in wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\framework\ops.py", line 1540, in convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1992, in _dense_var_to_tensor
+    return var._dense_var_to_tensor(dtype=dtype, name=name, as_ref=as_ref)  # pylint: disable=protected-access
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1393, in _dense_var_to_tensor
+    return self.value()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 565, in value
+    return self._read_variable_op()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 672, in _read_variable_op
+    result = read_and_set_handle()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 663, in read_and_set_handle
+    self._handle, self._dtype)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 478, in read_variable_op
+    resource, dtype=dtype, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 503, in read_variable_op_eager_fallback
+    attrs=_attrs, ctx=ctx, name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 75, in quick_execute
+    raise e
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 60, in quick_execute
+    inputs, attrs, num_outputs)
+TypeError: An op outside of the function building code is being passed
+a "Graph" tensor. It is possible to have Graph tensors
+leak out of the function building context by including a
+tf.init_scope in your function building code.
+For example, the following function will fail:
+  @tf.function
+  def has_init_scope():
+    my_constant = tf.constant(1.)
+    with tf.init_scope():
+      added = my_constant * 2
+The graph tensor has name: conv1_conv/kernel:0
+(Nov 11, 2020 21:33:48 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-42-e89a865d565e>", line 17, in <module>
+    grads=guided_backprop(guided_model, next(iter(vad.take(1).map(preprocess)))[0], "conv5_block3_out")
+  File "<ipython-input-42-e89a865d565e>", line 11, in guided_backprop
+    part_output = model(img)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 975, in __call__
+    args, kwargs, call_context)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1208, in _set_training_mode
+    training_mode = self._default_training_arg
+AttributeError: 'Functional' object has no attribute '_default_training_arg'
+(Nov 11, 2020 21:34:56 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-44-a2bd7eb29fc9>", line 1, in <module>
+    part_output = model(img_array)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 560, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py", line 666, in __call__
+    self._assert_built_as_v1()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py", line 854, in _assert_built_as_v1
+    (type(self),))
+ValueError: Your Layer or Model is in an invalid state. This can happen for the following cases:
+ 1. You might be interleaving estimator/non-estimator models or interleaving models/layers made in tf.compat.v1.Graph.as_default() with models/layers created outside of it. Converting a model to an estimator (via model_to_estimator) invalidates all models/layers made before the conversion (even if they were not the model converted to an estimator). Similarly, making a layer or a model inside a a tf.compat.v1.Graph invalidates all layers/models you previously made outside of the graph.
+2. You might be using a custom keras layer implementation with  custom __init__ which didn't call super().__init__.  Please check the implementation of <class 'tensorflow.python.keras.layers.convolutional.ZeroPadding2D'> and its bases.
+(Nov 11, 2020 21:36:45 - crispy - INFO) Intial weight was None.
+
+(Nov 11, 2020 21:36:45 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 11, 2020 21:47:58 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 11, 2020 21:48:23 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 11, 2020 21:48:25 - crispy - DEBUG) Test
+
+(Nov 11, 2020 21:48:25 - crispy - INFO) GPU is available.
+
+(Nov 11, 2020 21:48:26 - crispy - INFO) Intial weight was None.
+
+(Nov 11, 2020 21:48:26 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 11, 2020 21:50:12 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-30-c365875f0937>", line 17, in <module>
+    grads=guided_backprop(guided_model, next(iter(vad.take(1).map(preprocess)))[0], "conv5_block3_out")
+  File "<ipython-input-30-c365875f0937>", line 11, in guided_backprop
+    part_output = part_model(img)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 560, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py", line 831, in __call__
+    outputs = self.call(cast_inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\layers\convolutional.py", line 2881, in call
+    inputs, padding=self.padding, data_format=self.data_format)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\util\dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\backend.py", line 3449, in spatial_2d_padding
+    return array_ops.pad(x, pattern)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\util\dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\array_ops.py", line 3422, in pad
+    result = gen_array_ops.pad(tensor, paddings, name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_array_ops.py", line 6479, in pad
+    input, paddings, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_array_ops.py", line 6504, in pad_eager_fallback
+    ctx=ctx, name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 60, in quick_execute
+    inputs, attrs, num_outputs)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: The first dimension of paddings must be the rank of inputs[4,2] [224,224,3] [Op:Pad]
+(Nov 11, 2020 21:50:44 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-31-43b7a98a563d>", line 17, in <module>
+    grads=guided_backprop(guided_model, img_array, "conv5_block3_out")
+  File "<ipython-input-31-43b7a98a563d>", line 11, in guided_backprop
+    part_output = part_model(img)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 560, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py", line 831, in __call__
+    outputs = self.call(cast_inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\layers\convolutional.py", line 248, in call
+    outputs = self._convolution_op(inputs, self.kernel)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\util\dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1020, in convolution_v2
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1150, in convolution_internal
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 2604, in _conv2d_expanded_batch
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 938, in conv2d
+    data_format=data_format, dilations=dilations, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 1018, in conv2d_eager_fallback
+    _attr_T, _inputs_T = _execute.args_to_matching_eager([input, filter], ctx, [_dtypes.half, _dtypes.bfloat16, _dtypes.float32, _dtypes.float64, _dtypes.int32, ])
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in args_to_matching_eager
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in <listcomp>
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\profiler\trace.py", line 163, in wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\framework\ops.py", line 1540, in convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1992, in _dense_var_to_tensor
+    return var._dense_var_to_tensor(dtype=dtype, name=name, as_ref=as_ref)  # pylint: disable=protected-access
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1393, in _dense_var_to_tensor
+    return self.value()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 565, in value
+    return self._read_variable_op()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 672, in _read_variable_op
+    result = read_and_set_handle()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 663, in read_and_set_handle
+    self._handle, self._dtype)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 478, in read_variable_op
+    resource, dtype=dtype, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 503, in read_variable_op_eager_fallback
+    attrs=_attrs, ctx=ctx, name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 75, in quick_execute
+    raise e
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 60, in quick_execute
+    inputs, attrs, num_outputs)
+TypeError: An op outside of the function building code is being passed
+a "Graph" tensor. It is possible to have Graph tensors
+leak out of the function building context by including a
+tf.init_scope in your function building code.
+For example, the following function will fail:
+  @tf.function
+  def has_init_scope():
+    my_constant = tf.constant(1.)
+    with tf.init_scope():
+      added = my_constant * 2
+The graph tensor has name: conv1_conv/kernel:0
+(Nov 11, 2020 21:51:39 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-32-b25dad061b04>", line 17, in <module>
+    grads=guided_backprop(guided_model, img_array, "conv5_block3_out")
+  File "<ipython-input-32-b25dad061b04>", line 11, in guided_backprop
+    part_output = part_model(img)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 560, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py", line 831, in __call__
+    outputs = self.call(cast_inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\layers\convolutional.py", line 248, in call
+    outputs = self._convolution_op(inputs, self.kernel)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\util\dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1020, in convolution_v2
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1150, in convolution_internal
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 2604, in _conv2d_expanded_batch
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 938, in conv2d
+    data_format=data_format, dilations=dilations, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 1018, in conv2d_eager_fallback
+    _attr_T, _inputs_T = _execute.args_to_matching_eager([input, filter], ctx, [_dtypes.half, _dtypes.bfloat16, _dtypes.float32, _dtypes.float64, _dtypes.int32, ])
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in args_to_matching_eager
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in <listcomp>
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\profiler\trace.py", line 163, in wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\framework\ops.py", line 1540, in convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1992, in _dense_var_to_tensor
+    return var._dense_var_to_tensor(dtype=dtype, name=name, as_ref=as_ref)  # pylint: disable=protected-access
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1393, in _dense_var_to_tensor
+    return self.value()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 565, in value
+    return self._read_variable_op()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 672, in _read_variable_op
+    result = read_and_set_handle()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 663, in read_and_set_handle
+    self._handle, self._dtype)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 478, in read_variable_op
+    resource, dtype=dtype, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 503, in read_variable_op_eager_fallback
+    attrs=_attrs, ctx=ctx, name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 75, in quick_execute
+    raise e
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 60, in quick_execute
+    inputs, attrs, num_outputs)
+TypeError: An op outside of the function building code is being passed
+a "Graph" tensor. It is possible to have Graph tensors
+leak out of the function building context by including a
+tf.init_scope in your function building code.
+For example, the following function will fail:
+  @tf.function
+  def has_init_scope():
+    my_constant = tf.constant(1.)
+    with tf.init_scope():
+      added = my_constant * 2
+The graph tensor has name: conv1_conv/kernel:0
+(Nov 11, 2020 21:53:25 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-33-5e9188ab306b>", line 1, in <module>
+    guided_model(img_array)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 975, in __call__
+    args, kwargs, call_context)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1208, in _set_training_mode
+    training_mode = self._default_training_arg
+AttributeError: 'Functional' object has no attribute '_default_training_arg'
+(Nov 11, 2020 21:53:50 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-34-6c32ca2a82d7>", line 1, in <module>
+    model(img_array)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 560, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py", line 666, in __call__
+    self._assert_built_as_v1()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py", line 854, in _assert_built_as_v1
+    (type(self),))
+ValueError: Your Layer or Model is in an invalid state. This can happen for the following cases:
+ 1. You might be interleaving estimator/non-estimator models or interleaving models/layers made in tf.compat.v1.Graph.as_default() with models/layers created outside of it. Converting a model to an estimator (via model_to_estimator) invalidates all models/layers made before the conversion (even if they were not the model converted to an estimator). Similarly, making a layer or a model inside a a tf.compat.v1.Graph invalidates all layers/models you previously made outside of the graph.
+2. You might be using a custom keras layer implementation with  custom __init__ which didn't call super().__init__.  Please check the implementation of <class 'tensorflow.python.keras.layers.convolutional.ZeroPadding2D'> and its bases.
+(Nov 11, 2020 21:54:07 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 11, 2020 21:54:09 - crispy - DEBUG) Test
+
+(Nov 11, 2020 21:54:09 - crispy - INFO) GPU is available.
+
+(Nov 11, 2020 21:54:10 - crispy - INFO) Intial weight was None.
+
+(Nov 11, 2020 21:54:10 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 11, 2020 21:55:24 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-30-6c32ca2a82d7>", line 1, in <module>
+    model(img_array)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py", line 666, in __call__
+    self._assert_built_as_v1()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py", line 854, in _assert_built_as_v1
+    (type(self),))
+ValueError: Your Layer or Model is in an invalid state. This can happen for the following cases:
+ 1. You might be interleaving estimator/non-estimator models or interleaving models/layers made in tf.compat.v1.Graph.as_default() with models/layers created outside of it. Converting a model to an estimator (via model_to_estimator) invalidates all models/layers made before the conversion (even if they were not the model converted to an estimator). Similarly, making a layer or a model inside a a tf.compat.v1.Graph invalidates all layers/models you previously made outside of the graph.
+2. You might be using a custom keras layer implementation with  custom __init__ which didn't call super().__init__.  Please check the implementation of <class 'tensorflow.python.keras.engine.functional.Functional'> and its bases.
+(Nov 11, 2020 21:56:33 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 11, 2020 21:56:35 - crispy - DEBUG) Test
+
+(Nov 11, 2020 21:56:35 - crispy - INFO) GPU is available.
+
+(Nov 11, 2020 21:56:36 - crispy - INFO) Intial weight was None.
+
+(Nov 11, 2020 21:56:36 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 11, 2020 21:56:48 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-29-507b4df3820d>", line 15, in <module>
+    grads=guided_backprop(model, img_array, "conv5_block3_out")
+  File "<ipython-input-29-507b4df3820d>", line 8, in guided_backprop
+    tape.watch(model_input)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\backprop.py", line 906, in watch
+    type(t)))
+ValueError: Passed in object of type <class 'tensorflow.python.keras.engine.keras_tensor.KerasTensor'>, not tf.Tensor
+(Nov 11, 2020 22:01:46 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-31-a7a9cccbe252>", line 1, in <module>
+    make_gradcam_heatmap(img_array, model, last_conv_layer_name, classifier_layer_names)
+  File "<ipython-input-30-073c246e490b>", line 27, in make_gradcam_heatmap
+    l.set_weights(model.get_layer(layer_name).get_weights())
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1852, in set_weights
+    (self.name, len(weights), expected_num_weights, str(weights)[:50]))
+ValueError: You called `set_weights(weights)` on layer "predictions_gradcam" with a weight list of length 2, but the layer was expecting 0 weights. Provided weights: [array([[-0.04745435],
+       [ 0.02900968],
+     ...
+(Nov 11, 2020 22:19:23 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-40-f277192d6d41>", line 15, in <module>
+    grads=guided_backprop(guided_model, img_array, "conv5_block3_out")
+  File "<ipython-input-40-f277192d6d41>", line 9, in guided_backprop
+    part_output = part_model(img)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 560, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer_v1.py", line 831, in __call__
+    outputs = self.call(cast_inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\layers\convolutional.py", line 248, in call
+    outputs = self._convolution_op(inputs, self.kernel)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\util\dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1020, in convolution_v2
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1150, in convolution_internal
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 2604, in _conv2d_expanded_batch
+    name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 938, in conv2d
+    data_format=data_format, dilations=dilations, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 1018, in conv2d_eager_fallback
+    _attr_T, _inputs_T = _execute.args_to_matching_eager([input, filter], ctx, [_dtypes.half, _dtypes.bfloat16, _dtypes.float32, _dtypes.float64, _dtypes.int32, ])
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in args_to_matching_eager
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 280, in <listcomp>
+    ret = [ops.convert_to_tensor(t, dtype, ctx=ctx) for t in l]
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\profiler\trace.py", line 163, in wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\framework\ops.py", line 1540, in convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1992, in _dense_var_to_tensor
+    return var._dense_var_to_tensor(dtype=dtype, name=name, as_ref=as_ref)  # pylint: disable=protected-access
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 1393, in _dense_var_to_tensor
+    return self.value()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 565, in value
+    return self._read_variable_op()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 672, in _read_variable_op
+    result = read_and_set_handle()
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py", line 663, in read_and_set_handle
+    self._handle, self._dtype)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 478, in read_variable_op
+    resource, dtype=dtype, name=name, ctx=_ctx)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\ops\gen_resource_variable_ops.py", line 503, in read_variable_op_eager_fallback
+    attrs=_attrs, ctx=ctx, name=name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 75, in quick_execute
+    raise e
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\eager\execute.py", line 60, in quick_execute
+    inputs, attrs, num_outputs)
+TypeError: An op outside of the function building code is being passed
+a "Graph" tensor. It is possible to have Graph tensors
+leak out of the function building context by including a
+tf.init_scope in your function building code.
+For example, the following function will fail:
+  @tf.function
+  def has_init_scope():
+    my_constant = tf.constant(1.)
+    with tf.init_scope():
+      added = my_constant * 2
+The graph tensor has name: conv1_conv/kernel:0
+(Nov 11, 2020 22:52:09 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-41-4a90c6c1deed>", line 1, in <module>
+    isinstance(tf.keras.activations.relu, tf.keras.activations)
+TypeError: isinstance() arg 2 must be a type or tuple of types
+(Nov 11, 2020 22:57:07 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 11, 2020 22:57:09 - crispy - DEBUG) Test
+
+(Nov 11, 2020 22:57:09 - crispy - INFO) GPU is available.
+
+(Nov 11, 2020 22:57:10 - crispy - INFO) Intial weight was None.
+
+(Nov 11, 2020 22:57:10 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 11, 2020 22:59:44 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-29-4fffd419bd08>", line 18, in <module>
+    grads=guided_backprop(guided_model, img_array, "conv5_block3_out")
+NameError: name 'img_array' is not defined
+(Nov 11, 2020 22:59:51 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-31-4fffd419bd08>", line 18, in <module>
+    grads=guided_backprop(guided_model, img_array, "conv5_block3_out")
+  File "<ipython-input-31-4fffd419bd08>", line 12, in guided_backprop
+    part_output = part_model(f32_img)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 569, in _run_internal_graph
+    assert x_id in tensor_dict, 'Could not compute output ' + str(x)
+AssertionError: Could not compute output KerasTensor(type_spec=TensorSpec(shape=(None, None, None, 2048), dtype=tf.float32, name=None), name='conv5_block3_out/Relu:0', description="created by layer 'conv5_block3_out'")
+(Nov 11, 2020 23:02:13 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-32-4fffd419bd08>", line 18, in <module>
+    grads=guided_backprop(guided_model, img_array, "conv5_block3_out")
+  File "<ipython-input-32-4fffd419bd08>", line 12, in guided_backprop
+    part_output = part_model(f32_img)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 569, in _run_internal_graph
+    assert x_id in tensor_dict, 'Could not compute output ' + str(x)
+AssertionError: Could not compute output KerasTensor(type_spec=TensorSpec(shape=(None, None, None, 2048), dtype=tf.float32, name=None), name='conv5_block3_out/Relu:0', description="created by layer 'conv5_block3_out'")
+(Nov 11, 2020 23:03:01 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-35-5e9188ab306b>", line 1, in <module>
+    guided_model(img_array)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 569, in _run_internal_graph
+    assert x_id in tensor_dict, 'Could not compute output ' + str(x)
+AssertionError: Could not compute output KerasTensor(type_spec=TensorSpec(shape=(None, 1), dtype=tf.float32, name=None), name='predictions/Sigmoid:0', description="created by layer 'predictions'")
+(Nov 11, 2020 23:06:32 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 11, 2020 23:06:34 - crispy - DEBUG) Test
+
+(Nov 11, 2020 23:06:34 - crispy - INFO) GPU is available.
+
+(Nov 11, 2020 23:06:36 - crispy - INFO) Intial weight was None.
+
+(Nov 11, 2020 23:06:36 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 11, 2020 23:06:41 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-29-6c32ca2a82d7>", line 1, in <module>
+    model(img_array)
+NameError: name 'img_array' is not defined
+(Nov 11, 2020 23:06:47 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-31-5e9188ab306b>", line 1, in <module>
+    guided_model(img_array)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 569, in _run_internal_graph
+    assert x_id in tensor_dict, 'Could not compute output ' + str(x)
+AssertionError: Could not compute output KerasTensor(type_spec=TensorSpec(shape=(None, 1), dtype=tf.float32, name=None), name='predictions/Sigmoid:0', description="created by layer 'predictions'")
+(Nov 11, 2020 23:07:53 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-33-5e9188ab306b>", line 1, in <module>
+    guided_model(img_array)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 569, in _run_internal_graph
+    assert x_id in tensor_dict, 'Could not compute output ' + str(x)
+AssertionError: Could not compute output KerasTensor(type_spec=TensorSpec(shape=(None, 1), dtype=tf.float32, name=None), name='predictions/Sigmoid:0', description="created by layer 'predictions'")
+(Nov 11, 2020 23:08:21 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-34-5e9188ab306b>", line 1, in <module>
+    guided_model(img_array)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 569, in _run_internal_graph
+    assert x_id in tensor_dict, 'Could not compute output ' + str(x)
+AssertionError: Could not compute output KerasTensor(type_spec=TensorSpec(shape=(None, 1), dtype=tf.float32, name=None), name='predictions/Sigmoid:0', description="created by layer 'predictions'")
+(Nov 11, 2020 23:13:13 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-38-5e9188ab306b>", line 1, in <module>
+    guided_model(img_array)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 569, in _run_internal_graph
+    assert x_id in tensor_dict, 'Could not compute output ' + str(x)
+AssertionError: Could not compute output KerasTensor(type_spec=TensorSpec(shape=(None, 1), dtype=tf.float32, name=None), name='predictions/Sigmoid:0', description="created by layer 'predictions'")
+(Nov 11, 2020 23:13:38 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-39-26c78856309b>", line 1, in <module>
+    guided_model(tf.cast(img_array, tf.float32))
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 569, in _run_internal_graph
+    assert x_id in tensor_dict, 'Could not compute output ' + str(x)
+AssertionError: Could not compute output KerasTensor(type_spec=TensorSpec(shape=(None, 1), dtype=tf.float32, name=None), name='predictions/Sigmoid:0', description="created by layer 'predictions'")
+(Nov 11, 2020 23:16:05 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-42-26c78856309b>", line 1, in <module>
+    guided_model(tf.cast(img_array, tf.float32))
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 569, in _run_internal_graph
+    assert x_id in tensor_dict, 'Could not compute output ' + str(x)
+AssertionError: Could not compute output KerasTensor(type_spec=TensorSpec(shape=(None, 1), dtype=tf.float32, name=None), name='predictions/Sigmoid:0', description="created by layer 'predictions'")
+(Nov 11, 2020 23:17:10 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-43-4fffd419bd08>", line 18, in <module>
+    grads=guided_backprop(guided_model, img_array, "conv5_block3_out")
+  File "<ipython-input-43-4fffd419bd08>", line 12, in guided_backprop
+    part_output = part_model(f32_img)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 569, in _run_internal_graph
+    assert x_id in tensor_dict, 'Could not compute output ' + str(x)
+AssertionError: Could not compute output KerasTensor(type_spec=TensorSpec(shape=(None, None, None, 2048), dtype=tf.float32, name=None), name='conv5_block3_out/Relu:0', description="created by layer 'conv5_block3_out'")
+(Nov 11, 2020 23:27:30 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-48-2d7e7ffab910>", line 1, in <module>
+    guided_model([tf.cast(img_array, tf.float32)])
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 569, in _run_internal_graph
+    assert x_id in tensor_dict, 'Could not compute output ' + str(x)
+AssertionError: Could not compute output KerasTensor(type_spec=TensorSpec(shape=(None, 1), dtype=tf.float32, name=None), name='predictions/Sigmoid:0', description="created by layer 'predictions'")
+(Nov 11, 2020 23:28:14 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-51-a7a9cccbe252>", line 1, in <module>
+    make_gradcam_heatmap(img_array, model, last_conv_layer_name, classifier_layer_names)
+  File "<ipython-input-50-3117608a2129>", line 31, in make_gradcam_heatmap
+    print(classifier_model.summary(120))
+UnboundLocalError: local variable 'classifier_model' referenced before assignment
+(Nov 11, 2020 23:29:35 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3114, in run_cell_async
+    code_ast = compiler.ast_parse(cell, filename=cell_name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\compilerop.py", line 101, in ast_parse
+    return compile(source, filename, symbol, self.flags | PyCF_ONLY_AST, 1)
+  File "<ipython-input-56-396f700e14ce>", line 1
+    guided_model.summary(120))
+                             ^
+SyntaxError: invalid syntax
+(Nov 11, 2020 23:30:53 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-60-26c78856309b>", line 1, in <module>
+    guided_model(tf.cast(img_array, tf.float32))
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 569, in _run_internal_graph
+    assert x_id in tensor_dict, 'Could not compute output ' + str(x)
+AssertionError: Could not compute output KerasTensor(type_spec=TensorSpec(shape=(None, 1), dtype=tf.float32, name=None), name='predictions/Sigmoid:0', description="created by layer 'predictions'")
+(Nov 11, 2020 23:42:29 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 11, 2020 23:42:31 - crispy - DEBUG) Test
+
+(Nov 11, 2020 23:42:31 - crispy - INFO) GPU is available.
+
+(Nov 11, 2020 23:42:32 - crispy - INFO) Intial weight was None.
+
+(Nov 11, 2020 23:42:32 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 11, 2020 23:42:33 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-31-26c78856309b>", line 1, in <module>
+    guided_model(tf.cast(img_array, tf.float32))
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 569, in _run_internal_graph
+    assert x_id in tensor_dict, 'Could not compute output ' + str(x)
+AssertionError: Could not compute output KerasTensor(type_spec=TensorSpec(shape=(None, 1), dtype=tf.float32, name=None), name='predictions/Sigmoid:0', description="created by layer 'predictions'")
+(Nov 11, 2020 23:44:38 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-34-26c78856309b>", line 1, in <module>
+    guided_model(tf.cast(img_array, tf.float32))
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 569, in _run_internal_graph
+    assert x_id in tensor_dict, 'Could not compute output ' + str(x)
+AssertionError: Could not compute output KerasTensor(type_spec=TensorSpec(shape=(None, 1000), dtype=tf.float32, name=None), name='predictions/Softmax:0', description="created by layer 'predictions'")
+(Nov 11, 2020 23:45:35 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-36-588489e3b77a>", line 2, in <module>
+    preprocessed_input = load_image("./cat1.jpg")
+  File "<ipython-input-35-e6150d171731>", line 3, in load_image
+    x = image.load_img(path, target_size=(H, W))
+NameError: name 'image' is not defined
+(Nov 11, 2020 23:45:51 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-39-588489e3b77a>", line 2, in <module>
+    preprocessed_input = load_image("./cat1.jpg")
+  File "<ipython-input-38-e6150d171731>", line 3, in load_image
+    x = image.load_img(path, target_size=(H, W))
+NameError: name 'H' is not defined
+(Nov 11, 2020 23:46:32 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-41-588489e3b77a>", line 2, in <module>
+    preprocessed_input = load_image("./cat1.jpg")
+  File "<ipython-input-40-152696a9c041>", line 8, in load_image
+    x = preprocess_input(x)
+NameError: name 'preprocess_input' is not defined
+(Nov 11, 2020 23:47:24 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-45-b3153d14a253>", line 1, in <module>
+    guided_model(tf.cast(preprocessed_input, tf.float32))
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 569, in _run_internal_graph
+    assert x_id in tensor_dict, 'Could not compute output ' + str(x)
+AssertionError: Could not compute output KerasTensor(type_spec=TensorSpec(shape=(None, 1000), dtype=tf.float32, name=None), name='predictions/Softmax:0', description="created by layer 'predictions'")
+(Nov 11, 2020 23:49:23 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-48-b3153d14a253>", line 1, in <module>
+    guided_model(tf.cast(preprocessed_input, tf.float32))
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1007, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 425, in call
+    inputs, training=training, mask=mask)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\functional.py", line 569, in _run_internal_graph
+    assert x_id in tensor_dict, 'Could not compute output ' + str(x)
+AssertionError: Could not compute output KerasTensor(type_spec=TensorSpec(shape=(None, 1000), dtype=tf.float32, name=None), name='predictions/Softmax:0', description="created by layer 'predictions'")
+(Nov 11, 2020 23:54:34 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-53-a97c48bf3052>", line 2, in <module>
+    guided_model = build_guided_model(res, img)
+NameError: name 'img' is not defined
+(Nov 12, 2020 00:06:54 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-66-f7348ec05475>", line 2, in <module>
+    cv2.resize(heatmap, [224,224])
+SystemError: new style getargs format but argument is not a tuple
+(Nov 12, 2020 00:11:05 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-78-f7bf743221f1>", line 1, in <module>
+    np.dot(grads[0], hr)
+  File "<__array_function__ internals>", line 6, in dot
+ValueError: shapes (224,224,3) and (224,224) not aligned: 3 (dim 2) != 224 (dim 0)
+(Nov 12, 2020 00:14:52 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-84-9cdf4430353d>", line 1, in <module>
+    np.dot(grads[0], np.repeat(hr[...,None], 3, axis = 2))
+  File "<__array_function__ internals>", line 6, in dot
+ValueError: shapes (224,224,3) and (224,224,3) not aligned: 3 (dim 2) != 224 (dim 1)
+(Nov 12, 2020 00:21:58 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-90-c40ad5ed9bfc>", line 1, in <module>
+    ggc = deprocess_image(guided_grad_cam(gb, heatmap))
+  File "<ipython-input-87-8761c8e661ee>", line 2, in deprocess_image
+    x = x.copy()
+AttributeError: 'tensorflow.python.framework.ops.EagerTensor' object has no attribute 'copy'
+(Nov 12, 2020 00:25:37 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-94-32a8adac1cb5>", line 7, in <module>
+    guided_backprop(guided_model, img_array, "conv5_block3_out"), make_gradcam_heatmap(img_array, guided_model, last_conv_layer_name, classifier_layer_names)
+  File "<ipython-input-86-66b1de226258>", line 2, in guided_grad_cam
+    resized_gradcam = cv2.resize(gradcam, target_size)
+TypeError: src is not a numerical tuple
+(Nov 12, 2020 00:29:34 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-98-fa1d3af43d01>", line 7, in <module>
+    guided_backprop(guided_model, img_array, "conv5_block3_out"), make_gradcam_heatmap(img_array, res, last_conv_layer_name, classifier_layer_names)
+  File "<ipython-input-95-3d2a6bc3a777>", line 30, in make_gradcam_heatmap
+    x = model.get_layer(layer_name)(x)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\training.py", line 2423, in get_layer
+    raise ValueError('No such layer: ' + name + '.')
+ValueError: No such layer: global_avg.
+(Nov 12, 2020 00:30:37 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-101-1ed42403011a>", line 3, in <module>
+    img_array = d[0][None,...][:2].numpy()
+AttributeError: 'numpy.ndarray' object has no attribute 'numpy'
+(Nov 12, 2020 00:32:12 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-104-5cad72bc6c27>", line 7, in <module>
+    guided_backprop(guided_model, img_array, "conv5_block3_out"), make_gradcam_heatmap(img_array, res, last_conv_layer_name, classifier_layer_names)
+  File "<ipython-input-95-3d2a6bc3a777>", line 28, in make_gradcam_heatmap
+    l.set_weights(model.get_layer(layer_name).get_weights())
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1868, in set_weights
+    'shape %s' % (ref_shape, weight.shape))
+ValueError: Layer weight shape (2048, 1) not compatible with provided weight shape (2048, 1000)
+(Nov 12, 2020 00:32:44 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-105-351269b31d75>", line 1, in <module>
+    make_gradcam_heatmap(img_array, res, last_conv_layer_name, classifier_layer_names)
+  File "<ipython-input-95-3d2a6bc3a777>", line 28, in make_gradcam_heatmap
+    l.set_weights(model.get_layer(layer_name).get_weights())
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1868, in set_weights
+    'shape %s' % (ref_shape, weight.shape))
+ValueError: Layer weight shape (2048, 1) not compatible with provided weight shape (2048, 1000)
+(Nov 12, 2020 00:38:20 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-115-6586a649f68f>", line 2, in <module>
+    guided_model = build_guided_model(res, img_array)
+TypeError: build_guided_model() takes 1 positional argument but 2 were given
+(Nov 12, 2020 00:39:11 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3114, in run_cell_async
+    code_ast = compiler.ast_parse(cell, filename=cell_name)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\compilerop.py", line 101, in ast_parse
+    return compile(source, filename, symbol, self.flags | PyCF_ONLY_AST, 1)
+  File "<ipython-input-118-c80036c316cb>", line 2
+    deprocess_image(guided_backprop(guided_model, img_array, "conv5_block3_out")), -1)
+                                                                                     ^
+SyntaxError: unexpected EOF while parsing
+(Nov 12, 2020 09:49:35 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 12, 2020 09:49:42 - crispy - DEBUG) Test
+
+(Nov 12, 2020 09:49:42 - crispy - INFO) GPU is available.
+
+(Nov 12, 2020 09:49:44 - crispy - INFO) Intial weight was None.
+
+(Nov 12, 2020 09:49:44 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 12, 2020 09:58:40 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-37-30de68e3c543>", line 1, in <module>
+    deprocess_image(guided_backprop(guided_model, preprocessed_input, "conv5_block3_out"))
+  File "<ipython-input-36-5a92d098b53f>", line 8, in deprocess_image
+    x /= (x.std() + K.epsilon())
+NameError: name 'K' is not defined
+(Nov 12, 2020 10:02:27 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-44-865c3e4b336d>", line 8, in <module>
+    gb_model = Model(
+NameError: name 'Model' is not defined
+(Nov 12, 2020 10:05:20 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-50-b80a56cbabf4>", line 2, in <module>
+    guided_model = build_guided_model(res)
+  File "<ipython-input-49-6ce367993542>", line 3, in build_guided_model
+    model_copied.load_weights(model.get_weights())
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\training.py", line 2195, in load_weights
+    if _is_hdf5_filepath(filepath):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\tensorflow\python\keras\engine\training.py", line 2814, in _is_hdf5_filepath
+    return (filepath.endswith('.h5') or filepath.endswith('.keras') or
+AttributeError: 'list' object has no attribute 'endswith'
+(Nov 12, 2020 10:06:21 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-54-5cad72bc6c27>", line 7, in <module>
+    guided_backprop(guided_model, img_array, "conv5_block3_out"), make_gradcam_heatmap(img_array, res, last_conv_layer_name, classifier_layer_names)
+  File "<ipython-input-34-66b1de226258>", line 2, in guided_grad_cam
+    resized_gradcam = cv2.resize(gradcam, target_size)
+NameError: name 'cv2' is not defined
+(Nov 12, 2020 10:52:24 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 12, 2020 10:52:26 - crispy - DEBUG) Test
+
+(Nov 12, 2020 10:52:26 - crispy - INFO) GPU is available.
+
+(Nov 12, 2020 10:52:27 - crispy - INFO) Intial weight was None.
+
+(Nov 12, 2020 10:52:27 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 12, 2020 10:52:53 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-23-bded4f496970>", line 1, in <module>
+    import keras.Model
+ModuleNotFoundError: No module named 'keras'
+(Nov 12, 2020 10:53:05 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-24-30782b260fe8>", line 1, in <module>
+    import tensorflow.keras.Model
+ModuleNotFoundError: No module named 'tensorflow.keras.Model'
+(Nov 12, 2020 10:54:28 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-27-b80a56cbabf4>", line 2, in <module>
+    guided_model = build_guided_model(res)
+  File "D:\Workspace\CustomModules\crispy\core\guided_grad_cam.py", line 87, in build_guided_model
+    return model_copied
+NameError: name 'model_copied' is not defined
+(Nov 12, 2020 11:01:13 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 12, 2020 11:01:15 - crispy - DEBUG) Test
+
+(Nov 12, 2020 11:01:15 - crispy - INFO) GPU is available.
+
+(Nov 12, 2020 11:01:16 - crispy - INFO) Intial weight was None.
+
+(Nov 12, 2020 11:01:16 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 12, 2020 11:02:05 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-31-2d02e83e05c7>", line 1, in <module>
+    ggc = deprocess_input(
+NameError: name 'deprocess_input' is not defined
+(Nov 12, 2020 11:02:14 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-32-eaa18a5a5c96>", line 2, in <module>
+    guided_grad_cam(gb, gradcam_heatmap)
+  File "D:\Workspace\CustomModules\crispy\core\guided_grad_cam.py", line 148, in guided_grad_cam
+    resized_gradcam = cv2.resize(gradcam, guided_backprop.shape[1:-1])
+NameError: name 'cv2' is not defined
+(Nov 12, 2020 11:02:28 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 12, 2020 11:02:30 - crispy - DEBUG) Test
+
+(Nov 12, 2020 11:02:30 - crispy - INFO) GPU is available.
+
+(Nov 12, 2020 11:02:31 - crispy - INFO) Intial weight was None.
+
+(Nov 12, 2020 11:02:31 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 12, 2020 11:02:36 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-30-eaa18a5a5c96>", line 2, in <module>
+    guided_grad_cam(gb, gradcam_heatmap)
+  File "D:\Workspace\CustomModules\crispy\core\guided_grad_cam.py", line 148, in guided_grad_cam
+    resized_gradcam = cv2.resize(gradcam, guided_backprop.shape[1:-1])
+TypeError: function takes exactly 2 arguments (1 given)
+(Nov 12, 2020 11:10:08 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-33-984ac896334c>", line 1, in <module>
+    guided_grad_cam(gb, gradcam_heatmap)
+  File "<ipython-input-32-a9ee7157ed9f>", line 21, in guided_grad_cam
+    resized_gradcam = cv2.resize(gradcam, guided_backprop.shape[1:-1])
+TypeError: function takes exactly 2 arguments (1 given)
+(Nov 12, 2020 11:10:43 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 12, 2020 11:10:45 - crispy - DEBUG) Test
+
+(Nov 12, 2020 11:10:45 - crispy - INFO) GPU is available.
+
+(Nov 12, 2020 11:10:46 - crispy - INFO) Intial weight was None.
+
+(Nov 12, 2020 11:10:46 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 12, 2020 11:10:51 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-30-eaa18a5a5c96>", line 2, in <module>
+    guided_grad_cam(gb, gradcam_heatmap)
+  File "D:\Workspace\CustomModules\crispy\core\guided_grad_cam.py", line 151, in guided_grad_cam
+    return gb * gradcam_r
+NameError: name 'gb' is not defined
+(Nov 12, 2020 11:11:23 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 12, 2020 11:11:25 - crispy - DEBUG) Test
+
+(Nov 12, 2020 11:11:25 - crispy - INFO) GPU is available.
+
+(Nov 12, 2020 11:11:26 - crispy - INFO) Intial weight was None.
+
+(Nov 12, 2020 11:11:26 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 12, 2020 11:11:31 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-30-eaa18a5a5c96>", line 2, in <module>
+    guided_grad_cam(gb, gradcam_heatmap)
+  File "D:\Workspace\CustomModules\crispy\core\guided_grad_cam.py", line 162, in deprocess_image
+    x /= (x.std() + K.epsilon())
+NameError: name 'K' is not defined
+(Nov 12, 2020 11:12:06 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 12, 2020 11:12:08 - crispy - DEBUG) Test
+
+(Nov 12, 2020 11:12:08 - crispy - INFO) GPU is available.
+
+(Nov 12, 2020 11:12:09 - crispy - INFO) Intial weight was None.
+
+(Nov 12, 2020 11:12:09 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 12, 2020 11:12:43 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-31-e75a31ea6788>", line 1, in <module>
+    plt.imshow(np.flip(ggc, -1))
+  File "<__array_function__ internals>", line 6, in flip
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\numpy\lib\function_base.py", line 236, in flip
+    axis = _nx.normalize_axis_tuple(axis, m.ndim)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\numpy\core\numeric.py", line 1358, in normalize_axis_tuple
+    axis = tuple([normalize_axis_index(ax, ndim, argname) for ax in axis])
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\numpy\core\numeric.py", line 1358, in <listcomp>
+    axis = tuple([normalize_axis_index(ax, ndim, argname) for ax in axis])
+numpy.AxisError: axis -1 is out of bounds for array of dimension 0
+(Nov 12, 2020 11:13:02 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-32-75c434b7dd4a>", line 1, in <module>
+    ggc.shape
+AttributeError: 'NoneType' object has no attribute 'shape'
+(Nov 12, 2020 11:13:44 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-35-3c832d167020>", line 1, in <module>
+    deprocess_image(guided_grad_cam(gb, gradcam_heatmap)).shape
+AttributeError: 'NoneType' object has no attribute 'shape'
+(Nov 12, 2020 11:15:38 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 12, 2020 11:15:40 - crispy - DEBUG) Test
+
+(Nov 12, 2020 11:15:40 - crispy - INFO) GPU is available.
+
+(Nov 12, 2020 11:15:41 - crispy - INFO) Intial weight was None.
+
+(Nov 12, 2020 11:15:41 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 12, 2020 11:30:03 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 12, 2020 11:30:06 - crispy - DEBUG) Test
+
+(Nov 12, 2020 11:30:06 - crispy - INFO) GPU is available.
+
+(Nov 12, 2020 11:30:07 - crispy - INFO) Intial weight was None.
+
+(Nov 12, 2020 11:30:07 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 12, 2020 11:30:11 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-30-4252a2bc4727>", line 1, in <module>
+    print(gb.max(), gb.min())
+NameError: name 'gb' is not defined
+(Nov 12, 2020 11:53:46 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-36-eb1a3a241d62>", line 14, in <module>
+    axs[i, 1].imshow(img_dis)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\matplotlib\__init__.py", line 1438, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\matplotlib\axes\_axes.py", line 5523, in imshow
+    im.set_data(X)
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\matplotlib\image.py", line 710, in set_data
+    .format(self._A.shape))
+TypeError: Invalid shape (1, 224, 224, 3) for image data
+(Nov 12, 2020 11:54:55 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-38-451161d6a6cb>", line 2, in <module>
+    fig.axis('off')
+AttributeError: 'Figure' object has no attribute 'axis'
+(Nov 12, 2020 11:56:18 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-39-8dbb5bae6115>", line 2, in <module>
+    fig.axis('off')
+AttributeError: 'Figure' object has no attribute 'axis'
+(Nov 12, 2020 12:12:23 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 12, 2020 12:12:25 - crispy - DEBUG) Test
+
+(Nov 12, 2020 12:12:25 - crispy - INFO) GPU is available.
+
+(Nov 12, 2020 12:12:26 - crispy - INFO) Intial weight was None.
+
+(Nov 12, 2020 12:12:26 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 12, 2020 12:12:34 - crispy - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\ml\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-30-3ea648198b21>", line 1, in <module>
+    guided_model = build_guided_model(res)
+NameError: name 'build_guided_model' is not defined
+(Nov 12, 2020 12:12:52 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 12, 2020 12:12:54 - crispy - DEBUG) Test
+
+(Nov 12, 2020 12:12:55 - crispy - INFO) GPU is available.
+
+(Nov 12, 2020 12:12:56 - crispy - INFO) Intial weight was None.
+
+(Nov 12, 2020 12:12:56 - crispy - INFO) layer.trainable was set to True.
+
+(Nov 12, 2020 12:19:02 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 12, 2020 12:26:02 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 12, 2020 12:27:24 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 12, 2020 12:29:13 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 12, 2020 12:29:30 - crispy - DEBUG) crispy logger was initialized.
+
+(Nov 12, 2020 12:32:55 - crispy - DEBUG) crispy logger was initialized.
+

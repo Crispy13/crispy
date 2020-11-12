@@ -34,7 +34,7 @@ def create_logger(file_handler_path = None, logger_name = 'logger', file_handler
     return logger
 
 # load logger
-def load_logger(logger_name = 'crispy13'):
+def load_logger(logger_name = 'crispy'):
     if logger_name in logging.root.manager.loggerDict:
         logger = logging.getLogger(logger_name)
         return logger

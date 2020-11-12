@@ -5,7 +5,7 @@ from tensorflow.keras.callbacks import Callback
 import numpy as np
 import time
 from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.layers import Conv3D, Dense
+from tensorflow.keras.layers import Conv3D, Dense, Conv2D
 from .ecf import *
 from .emri import *
 import pickle
@@ -212,24 +212,88 @@ class PruningCallback(Callback):
     """
     template_model argument should take model's template.
     
+    Parameters
+    ----------
+    
+    template_model : keras model
+        a keras model to apply lottery hypothesis. This argument should take a template of a model(e.g. not relicated model for gpu).
+    
+    base_percents : dict
+        Pruning thresholds of each layer type.
+    
+    save_dir : string
+        A path to save outputs of this callback.
+    
+    n : int
+        Use this argument when loading previous pruning results.
+    
+    Examples
+    --------
+    
+    pc = PruningCallback(model, base_percents = {'Conv2D':0.2, 'Dense':0.15})
+    
+    model.fit(..., callbacks = [..., pc, ...], ...)
+    pc.set_new_masks()
+    pc.pruning_weights()
+    pc.restore_initial_weights()
+    
+    
+    # After getting a optimal result
+    model.fit(..., callbacks = [..., pc, ...], ...)
+    pc.set_new_masks()
+    pc.pruning_weights()
+    pc.restore_initial_weights()
+    
+    ...
+            
+    
     """
     
-    def __init__(self, template_model, masks=None, percents = None, base_percents = {'Conv3D':0.2, 'Dense':0.15} , save_dir =".", layer_classes = ('Conv3D', 'Dense'), **kwargs):
+    def __init__(self, template_model, base_percents = {'Conv2D':0.2, 'Conv3D':0.2, 'Dense':0.15} , save_dir =".", layer_classes = None, masks=None, percents = None, **kwargs):
         self.model = template_model
-        self.layer_classes = tuple(layer_classes)
+        self.layer_classes = tuple(base_percents.keys())
         self.base_percents = base_percents
         self.layer_names_dict = self.make_layer_names_dict()# Currently, this class only supports keras.layers.Conv3D or Dense.
         self.weights = self.extract_weights(self.model)
         self.init_weights = self.model.get_weights()
-        self.n = 1
-        self.save_dir = save_dir
+        self.init_weights_filename = "lottery-ticket_initial_weights.pkl"
+        
+        if 'n' not in kwargs:
+            self.n = 1
+        
+        self.save_dir = get_savepath(os.path.join(save_dir, cds() + '_pruning_callback'))
+        make_folder(self.save_dir) # Make folder
         
         if percents is None: self._initialize_percents(self.model, base_percents)
         if masks is None: self._initialize_masks(self.model)
         
-        self.model.save_weights(get_savepath(f"{save_dir}/lottery-ticket_initial_weights.h5"))
-
-    def make_layer_names_dict(self, layer_classes = [Conv3D, Dense]):
+        # save initial weights
+#         self.model.save_weights(get_savepath(os.path.join(self.save_dir, self.init_weights_filename)))
+        pickle.dump(self.init_weights, open(get_savepath(os.path.join(self.save_dir, self.init_weights_filename)), "wb"))
+        
+        #etc
+    
+    def load(self, path):
+        """
+        load previous result of pruning callback
+        
+        Parameters
+        ----------
+        
+        path : string
+            a path of a file named *save_pruning_callback.pkl
+        
+        """
+        
+        self.layer_classes, self.base_percents, self.n, self.masks = pickle.load(open(path, "rb"))
+        self.layer_names_dict = self.make_layer_names_dict()# Currently, this class only supports keras.layers.Conv3D or Dense.
+        self.init_weights = pickle.load(open(os.path.join(os.path.dirname(path), self.init_weights_filename), "rb"))
+        
+        self._initialize_percents(self.model, self.base_percents)
+        self.weights = self.extract_weights(self.model)
+        self.save_dir = os.path.dirname(path) ; logger.info(f"save_dir was set to {self.save_dir}.")
+        
+    def make_layer_names_dict(self, layer_classes = [Conv2D, Conv3D, Dense]):
         rd = {}
         for i, l in enumerate(self.model.layers):
             if l.__class__.__name__ in self.layer_classes:
@@ -248,7 +312,7 @@ class PruningCallback(Callback):
             if len(ws) > 1:
                 masks[k] = np.ones(ws[0].shape)
             else:
-                masks[k] = ws
+                masks[k] = np.ones(ws[0].shape)
             
         self.masks = masks
     
@@ -270,12 +334,12 @@ class PruningCallback(Callback):
     
     def extract_weights(self, model):
         # Make masks
-        wd = dict.fromkeys(self.layer_names_dict)
+        wd = dict.fromkeys(self.layer_names_dict) # weights dictionary
 
         for i, k in enumerate(wd.keys()):
             cw = model.layers[self.layer_names_dict[k]['ix']].get_weights()
             if len(cw) > 1:
-                wd[k] = cw[0]
+                wd[k] = cw[0] # bias is not included in the whole process.
             else:
                 wd[k] = cw
         
@@ -283,6 +347,19 @@ class PruningCallback(Callback):
         
         
     def set_new_masks(self, mode='local'):
+        """
+        Make new masks for the layers of the model.
+        
+        Parameters
+        ----------
+        mode : string
+            Choose the mode by which the new masks will be made
+                
+        
+        """
+        # Check arguments is valid.
+        assert mode in ['global', 'local'], "Mode argument must take 'global' or 'local'."
+        
         percents, masks, model = self.percents, self.masks, self.model
         
         final_weights = self.extract_weights(model)
@@ -299,7 +376,7 @@ class PruningCallback(Callback):
             cutoff = sorted_weights[cutoff_index]
             
             return cutoff
-#             logger.info(f"Global cutoff: {cutoff}")
+            logger.info(f"Global cutoff: {cutoff}")
         
         if mode == 'global':
             cutoffs = dict.fromkeys(self.layer_classes)
@@ -310,6 +387,8 @@ class PruningCallback(Callback):
                 mpc = {kk:v for kk, v in masks.items() if self.layer_names_dict[kk]['class_name'] == k}
                 
                 cutoffs[k] = set_global_cutoff(mpc, wpc, percents, k)
+                
+                logger.info(f"Global cutoffs: {cutoffs.items()}")
             
         def prune_by_percent_once(percent, mask, final_weight, cutoff):
             # Put the weights that aren't masked out in sorted order.
@@ -335,11 +414,15 @@ class PruningCallback(Callback):
             return np.where(np.abs(final_weight) <= cutoff, np.zeros(mask.shape), mask)
 
         new_masks = {}
-        logger.info(f"Cutoffs: {cutoffs.items()}")
+        
         for k, percent in percents.items():
             logger.info(k)
-            logger.info(f"Class name: {self.layer_names_dict[k]['class_name']}, Cutoff : {cutoffs[self.layer_names_dict[k]['class_name']]}")
-            new_masks[k] = prune_by_percent_once(percent, masks[k], final_weights[k], cutoffs[self.layer_names_dict[k]['class_name']])
+            if mode == 'global':
+                logger.info(f"Class name: {self.layer_names_dict[k]['class_name']}, Cutoff : {cutoffs[self.layer_names_dict[k]['class_name']]}")
+                new_masks[k] = prune_by_percent_once(percent, masks[k], final_weights[k], cutoffs[self.layer_names_dict[k]['class_name']])
+            
+            elif mode == 'local':
+                new_masks[k] = prune_by_percent_once(percent, masks[k], final_weights[k], cutoff = None)
 
         self.old_masks = deepcopy(self.masks)
         self.masks = new_masks
@@ -356,13 +439,14 @@ class PruningCallback(Callback):
         if masks is None: masks = self.masks
         
         # Backup og_weights and old masks.
-        savepath = get_savepath(f"{self.save_dir}/{self.n}-th_weights-masks-percents.pkl")
+        savepath = get_savepath(os.path.join(self.save_dir, f"{self.n}-th_save_pruning_callback.pkl"))
         with open(savepath, "wb") as f:
-            pickle.dump([self.weights, self.old_masks, self.percents], f, protocol=4)
+            pickle.dump([self.layer_classes, self.base_percents, self.n, self.masks], f, protocol=4)
         
-        print(f"{self.n}-th information(weights-masks-percents) was saved to {savepath}.")
+        print(f"{self.n}-th information was saved to {savepath}.")
         
         self._apply_masks(model, masks)
+        
         
         self.weights = self.extract_weights(self.model)
         
@@ -395,6 +479,7 @@ class PruningCallback(Callback):
         """
         self.model.set_weights(self.init_weights)
         self._apply_masks()
+        logger.info(">> Initial weights were restored.")
         
     def on_train_begin(self, logs):
         # Apply mask to the weights of model.
@@ -412,7 +497,18 @@ class PruningCallback(Callback):
 ###
 def set_weight_decay(model, alpha):
     """
+    Adds L2 regularization to the layers of models.
+    
     This function can be applied to Conv2D, Dense or DepthwiseConv2D
+    
+    Parameters
+    ----------
+    
+    model : a keras model object.
+    
+    alpha : float
+        lambda value.
+        
     """
     for layer in model.layers:
         if isinstance(layer, keras.layers.DepthwiseConv2D):
@@ -425,5 +521,86 @@ def set_weight_decay(model, alpha):
             
 ###            
 def csv_remove_duplicates(csv_path):
+    """
+    Drops duplicated rows based on epoch column in csv log.
+    
+    Parameters
+    ----------
+    csv_path : string
+        csv file path.
+        
+    """
+    
+    
     csv_p = pd.read_csv(csv_path)
     csv_p.drop_duplicates(['epoch'], keep = 'last').to_csv(csv_path, index = False)
+    
+    
+    
+### PruningCallbacks
+class EarlyStopping_c1(keras.callbacks.EarlyStopping):
+    """
+    Derived class of keras.callbacks.EarlyStopping but has an attribute named best_epoch.
+    
+    The best epoch in training was assigned to it.
+    """
+    
+    def on_epoch_end(self, epoch, logs=None):
+        current = self.get_monitor_value(logs)
+        if current is None:
+            return
+        if self.monitor_op(current - self.min_delta, self.best):
+            self.best = current
+            self.best_epoch = epoch + 1
+            self.wait = 0
+            if self.restore_best_weights:
+                self.best_weights = self.model.get_weights()
+        else:
+            self.wait += 1
+            if self.wait >= self.patience:
+                self.stopped_epoch = epoch
+                self.model.stop_training = True
+                if self.restore_best_weights:
+                    if self.verbose > 0:
+                        print('Restoring model weights from the end of the best epoch.')
+                    self.model.set_weights(self.best_weights)
+                    
+                    
+### 
+def save_model(model, json_path):
+    """
+    Save a model's config to a json file.
+    
+    Parameters
+    ----------
+    model : a keras model object
+    
+    json_path : a json file path
+    
+    """
+    model_json = model.to_json()
+    with open(json_path, "w") as json_file : 
+        json_file.write(model_json)
+        
+        
+###
+def load_model(json_path, weight_h5 = None):
+    """
+    Load a model with a json config file and load weights with a h5 file.
+    
+    Parameters
+    ----------
+    json_path : a json file path containing a model config.
+    
+    weight_h5 : a h5 file path containing model weights.
+    
+    """
+    with open(json_path) as f:
+        json_config = f.read()
+        
+    model = model_from_json(json_config)
+    
+    if weight_h5:
+        model.load_weights(weight_h5)
+    
+    return model    

@@ -1,0 +1,104 @@
+(Sep 02, 2020 14:22:51 - crispy13 - DEBUG) crispy13 logger was initialized.
+
+(Sep 02, 2020 14:23:51 - crispy13 - DEBUG) crispy13 logger was initialized.
+
+(Sep 02, 2020 14:24:05 - crispy13 - DEBUG) crispy13 logger was initialized.
+
+(Sep 02, 2020 14:24:54 - crispy13 - DEBUG) crispy13 logger was initialized.
+
+(Sep 02, 2020 16:36:00 - crispy13 - DEBUG) crispy13 logger was initialized.
+
+(Sep 05, 2020 12:43:52 - crispy13 - DEBUG) crispy13 logger was initialized.
+
+(Sep 05, 2020 12:45:47 - crispy13 - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-13-b6b595db5d4e>", line 23, in <module>
+    _a = model.predict([x, tab])
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 1013, in predict
+    use_multiprocessing=use_multiprocessing)
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\keras\engine\training_v2.py", line 498, in predict
+    workers=workers, use_multiprocessing=use_multiprocessing, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\keras\engine\training_v2.py", line 475, in _model_iteration
+    total_epochs=1)
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\keras\engine\training_v2.py", line 128, in run_one_epoch
+    batch_outs = execution_function(iterator)
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\keras\engine\training_v2_utils.py", line 98, in execution_function
+    distributed_function(input_fn))
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\eager\def_function.py", line 568, in __call__
+    result = self._call(*args, **kwds)
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\eager\def_function.py", line 606, in _call
+    results = self._stateful_fn(*args, **kwds)
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\eager\function.py", line 2363, in __call__
+    return graph_function._filtered_call(args, kwargs)  # pylint: disable=protected-access
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\eager\function.py", line 1611, in _filtered_call
+    self.captured_inputs)
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\eager\function.py", line 1692, in _call_flat
+    ctx, args, cancellation_manager=cancellation_manager))
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\eager\function.py", line 545, in call
+    ctx=ctx)
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\eager\execute.py", line 67, in quick_execute
+    six.raise_from(core._status_to_exception(e.code, message), None)
+  File "<string>", line 3, in raise_from
+tensorflow.python.framework.errors_impl.ResourceExhaustedError:  OOM when allocating tensor with shape[32,144,256,256] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+	 [[node model/efficientnet-b5/block2a_expand_activation/Sigmoid (defined at E:\Workspace\CustomModules\efficientnet\model.py:115) ]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+ [Op:__inference_distributed_function_126449]
+
+Errors may have originated from an input operation.
+Input Source operations connected to node model/efficientnet-b5/block2a_expand_activation/Sigmoid:
+ model/efficientnet-b5/block2a_expand_bn/FusedBatchNormV3 (defined at <ipython-input-13-b6b595db5d4e>:23)
+
+Function call stack:
+distributed_function
+
+(Sep 05, 2020 13:14:49 - crispy13 - DEBUG) Got exception.
+
+Traceback (most recent call last):
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-14-b6b595db5d4e>", line 23, in <module>
+    _a = model.predict([x, tab])
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 1013, in predict
+    use_multiprocessing=use_multiprocessing)
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\keras\engine\training_v2.py", line 498, in predict
+    workers=workers, use_multiprocessing=use_multiprocessing, **kwargs)
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\keras\engine\training_v2.py", line 475, in _model_iteration
+    total_epochs=1)
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\keras\engine\training_v2.py", line 128, in run_one_epoch
+    batch_outs = execution_function(iterator)
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\keras\engine\training_v2_utils.py", line 98, in execution_function
+    distributed_function(input_fn))
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\eager\def_function.py", line 568, in __call__
+    result = self._call(*args, **kwds)
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\eager\def_function.py", line 606, in _call
+    results = self._stateful_fn(*args, **kwds)
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\eager\function.py", line 2363, in __call__
+    return graph_function._filtered_call(args, kwargs)  # pylint: disable=protected-access
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\eager\function.py", line 1611, in _filtered_call
+    self.captured_inputs)
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\eager\function.py", line 1692, in _call_flat
+    ctx, args, cancellation_manager=cancellation_manager))
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\eager\function.py", line 545, in call
+    ctx=ctx)
+  File "C:\Users\eck\anaconda3\envs\osic\lib\site-packages\tensorflow_core\python\eager\execute.py", line 67, in quick_execute
+    six.raise_from(core._status_to_exception(e.code, message), None)
+  File "<string>", line 3, in raise_from
+tensorflow.python.framework.errors_impl.ResourceExhaustedError:  OOM when allocating tensor with shape[32,144,256,256] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+	 [[node model/efficientnet-b5/block2a_expand_activation/Sigmoid (defined at E:\Workspace\CustomModules\efficientnet\model.py:115) ]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+ [Op:__inference_distributed_function_126449]
+
+Errors may have originated from an input operation.
+Input Source operations connected to node model/efficientnet-b5/block2a_expand_activation/Sigmoid:
+ model/efficientnet-b5/block2a_expand_bn/FusedBatchNormV3 (defined at <ipython-input-13-b6b595db5d4e>:23)
+
+Function call stack:
+distributed_function
+
+(Sep 05, 2020 13:33:18 - crispy13 - DEBUG) crispy13 logger was initialized.
+
+(Sep 24, 2020 14:13:53 - crispy13 - DEBUG) crispy13 logger was initialized.
+
