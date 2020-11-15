@@ -124,7 +124,8 @@ def get_savepath(save_path=None):
         
     # Search files with file name
     gl1 = glob.glob(f"{file_name}*{file_ext}") ; logger.debug(f"gl1: {gl1}")
-    re1 = list(filter(lambda x:re.search(f"{file_name}(?:_[0-9]+){file_ext}$", x) is not None, gl1)) ; logger.debug(f"re1: {re1}")
+    fn = file_name.replace(os.sep, "/")
+    re1 = list(filter(lambda x:re.search(f"{fn}(?:_[0-9]+){file_ext}$", os.path.normpath(x).replace(os.sep, "/")) is not None, gl1)) ; logger.debug(f"re1: {re1}")
     re2 = re1 + glob.glob(save_path)
         
     if len(re2) == 0:

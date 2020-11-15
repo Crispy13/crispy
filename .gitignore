@@ -1,0 +1,9 @@
+
+*.log
+*.pyc
+logs/
+examples/.ipynb_checkpoints/guided_grad_cam-checkpoint.ipynb
+core/.ipynb_checkpoints/ecf-checkpoint.py
+core/.ipynb_checkpoints/eckeras-checkpoint.py
+core/.ipynb_checkpoints/emri-checkpoint.py
+core/.ipynb_checkpoints/guided_grad_cam-checkpoint.py

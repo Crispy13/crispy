@@ -784,6 +784,40 @@ def get_index_by_patient_number_old(plist, df1, seed_n = 42, mode = 'random', co
 
 # Plot prediction result
 def plot_prediction_result(data, labels, preds, logged = None, chunk_size = 80, save_path = None, arrangement = ['d1', 'd1-l1', 'd1-p1', 'd1-ph', 'd1-l1-ph', 'd1-p1-ph'], **kwargs):
+    """
+    Plots a comparison figure with arrangement.
+    
+    Parameters
+    ----------
+    N : data numbers
+    C : channels
+    H : Height
+    W : Width
+    D : Depth
+    
+    data : a numpy array
+        (N, C, H, W, D) array, image data
+    
+    labels : a numpy array
+        (N, C, H, W, D) array, label data
+    
+    preds : a numpy array
+        (N, C, H, W, D) array, preds data
+        
+    chunk_size : the number of data for one png file.
+    
+    save_path : png save path.
+    
+    arrangement : a list of strings
+        e.g.
+            'd1' means data channel 1
+            'd1-l2' means overlaying label channel 2 on data channel 1 
+            'd1-p1-ph' means the height is what has the widest prediction area, pred channel 1 overlayed on data channel 1
+    
+        If you set arrangement to ['d1', 'd1-l1', 'd1-p1', 'd1-ph', 'd1-l1-ph', 'd1-p1-ph'], the figure will be (samples, 6) plot.
+            
+        
+    """
     ca = arange(0, len(data), chunk_size)
     
     for i in range(len(ca)):
@@ -1066,15 +1100,37 @@ def show_mri(img, label, pred = None, logged = None, arrangement = ['d1', 'd1-l1
              height=None, cmap='Greys_r', data_order=['x_test', 'y_test', 'y_pred', 'x_test', 'y_pred'], nums = None,
              thresh=0.5, save_path = None, pad = 5, subplot_adjust_left = 0.33, max_samples = 1000, img_types = None, initial_num = 1, **kwargs):
     """
-    Paramters
-    ---------
-    arrangement : a list.
-        e.g. ['d1', 'd2', 'd1-l1', 'd1-ph', 'd1-ph-p1']
-            d1 = data - channel 1
-            l2 = label - channel 2
-            p2 = pred - channel 2
-            ph = height based on prediction(not label)
-                       
+    
+    Parameters
+    ----------
+    N : data numbers
+    C : channels
+    H : Height
+    W : Width
+    D : Depth
+    
+    data : a numpy array
+        (N, C, H, W, D) array, image data
+    
+    labels : a numpy array
+        (N, C, H, W, D) array, label data
+    
+    preds : a numpy array
+        (N, C, H, W, D) array, preds data
+        
+    chunk_size : the number of data for one png file.
+    
+    save_path : png save path.
+    
+    arrangement : a list of strings
+        e.g.
+            'd1' means data channel 1
+            'd1-l2' means overlaying label channel 2 on data channel 1 
+            'd1-p1-ph' means the height is what has the widest prediction area, pred channel 1 overlayed on data channel 1
+    
+        If you set arrangement to ['d1', 'd1-l1', 'd1-p1', 'd1-ph', 'd1-l1-ph', 'd1-p1-ph'], the figure will be (samples, 6) plot.
+            
+        
     """
     
     # Set paramters
@@ -1254,14 +1310,14 @@ def truncate_trainset_size(*args, batch_size):
 
 
 def make_model(build_model, input_shape, output_channels, n_gpu, test_mode = True, seed_number = 42):
-    tf.set_random_seed(seed_number)
+    tf.random.set_seed(seed_number)
     np.random.seed(seed_number)
     logger.info(f"{seed_number} was set to seed number, and seed of tensorflow and numpy was set to the number.")
 
-    model, template_model, opt, lg, lv, dc = build_model(input_shape=input_shape,
+    model, opt, lg, lv, dc = build_model(input_shape=input_shape,
                                                     output_channels=output_channels, n_gpu=n_gpu, test_mode=True)
     
-    return model, template_model, opt, lg, lv, dc
+    return model, opt, lg, lv, dc
 
 
 def set_callbacks(model, save_dir, fold_number = None, min_delta = 0.01, patience = 10, baseline = None, a0 = 1e-5, lr_schedule_total_epoch = 300,
