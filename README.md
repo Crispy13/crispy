@@ -27,4 +27,13 @@ Tested in jupyter lab
 get_ipython().set_custom_exc((Exception,), csp.exception_sound(csp.logger)) # Exception sound alert
 ```
 
+<br><br>
+## Any feedbacks will be appreciated
+I'm a noob in machine learning part, so any advices or feedbacks would be helpful.
+
+
+
+
+
+
 [ggc]: https://github.com/Crispy13/crispy/blob/master/examples/guided_grad_cam.ipynb
