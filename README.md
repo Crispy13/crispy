@@ -29,7 +29,7 @@ get_ipython().set_custom_exc((Exception,), csp.exception_sound(csp.logger)) # Ex
 
 <br><br>
 ## Any feedbacks will be appreciated
-I'm a noob in machine learning part, so any advices or feedbacks would be helpful.
+Any advices or feedbacks would be helpful.
 
 
 
