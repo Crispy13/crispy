@@ -12,6 +12,7 @@ import time # For TimeChecker class.
 import numpy as np
 import math
 from IPython.display import Audio, display
+import multiprocessing as mp
 
 logger = load_logger()
 pathsep = os.path.sep
@@ -323,7 +324,7 @@ def cds(string_format = "%y%m%d_%H%M"):
 
 
 ### Ref : https://stackoverflow.com/questions/19562916/print-progress-of-pool-map-async
-def track_job(job, total, update_interval=1):
+def track_job(job, total, details = "", update_interval=1):
     """
     Tracks map_async job.
     
@@ -336,9 +337,14 @@ def track_job(job, total, update_interval=1):
     update_interval : interval of tracking
     
     """
+#     if not isinstance(job, mp.pool.AsyncResult):
+#         raise ValueError("`job` argument should be an AsyncResult object.")
+    
+    pb = Progressbar(total)
+    
     while job._number_left > 0:
         rc = total-(job._number_left*job._chunksize)
-        print_progressbar(total, rc)
+        pb.show(rc, details = details)
         time.sleep(update_interval)
         
         
