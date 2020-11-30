@@ -77,13 +77,12 @@ def sound_alert(audio_path = sound_path + "/sc2-psh-rc.mp3", **kwargs):
 
 
 ###
-def print_progressbar(total, i, details = ""):
+def print_progressbar(i, total, details = ""):
     """
     total : total iteration number.
     i : iteration count, starting from 0.
     details : string you want to show next to the progress bar. e.g. current file name.
     """
-    import math
     step = 25 / total
 
     # Print the progress bar
@@ -171,17 +170,41 @@ class TimeChecker():
     def set_end(self):
         self.end=time.time()
     
-    def show_elapsed_time(self):
+    def return_elapsed_time(self):
         hours, rem = divmod(self.end - self.start, 3600)
         minutes, seconds = divmod(rem, 60)
-        rs="{:0>2}:{:0>2}:{:05.2f}".format(int(hours),int(minutes),seconds)
-        print(rs)        
+        rs="{:0>2}:{:0>2}:{:0>2}".format(int(hours),int(minutes), int(seconds))
+        
         return rs
     
-    def set_and_show(self):
+    def set_and_return(self):
         self.end=time.time()
         
-        return self.show_elapsed_time()
+        return self.return_elapsed_time()
+    
+
+class Progressbar():
+    def __init__(self, total, step_time = 1):
+        self.total = total
+        self.tc = TimeChecker()
+        self.step = 25 / total
+        self.stc = TimeChecker()
+        self.step_time = step_time
+        
+    def show(self, i, details = "", blank_spaces = 150):
+        self.stc.set_end()
+        if (self.stc.end - self.stc.start > self.step_time) or ((i+1) == self.total):
+            # Print the progress bar
+            print("\r" + " " * blank_spaces, end="")
+            print('\r' + f'Progress: '
+                f"[{'=' * int((i+1) * self.step) + ' ' * (25 - int((i+1) * self.step))}]"
+                f"({math.floor((i+1) * 100 / (self.total))} %) ({i+1}/{self.total}) " + details + " | " + "Elapsed time : {}".format(self.tc.set_and_return()),
+                end='')
+            
+            self.stc.set_start()
+            
+        if (i+1) == self.total:
+            print("")
     
     
 ###
@@ -346,3 +369,10 @@ def make_folder(path):
         os.makedirs(path)
     else:
         raise FileExistsError("File already exists.")
+        
+        
+        
+### Grouped
+def grouped(iterable, n):
+    "s -> (s0,s1,s2,...sn-1), (sn,sn+1,sn+2,...s2n-1), (s2n,s2n+1,s2n+2,...s3n-1), ..."
+    return zip(*[iter(iterable)]*n)
