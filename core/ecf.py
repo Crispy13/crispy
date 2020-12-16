@@ -185,14 +185,14 @@ class TimeChecker():
     
 
 class Progressbar():
-    def __init__(self, total, step_time = 1):
+    def __init__(self, total = -1, step_time = 1):
         self.total = total
         self.tc = TimeChecker()
         self.step = 25 / total
         self.stc = TimeChecker()
         self.step_time = step_time
         
-    def show(self, i, details = "", blank_spaces = 150):
+    def _show(self, i, details = "", blank_spaces = 150):
         self.stc.set_end()
         if (self.stc.end - self.stc.start > self.step_time) or ((i+1) == self.total):
             # Print the progress bar
@@ -206,6 +206,27 @@ class Progressbar():
             
         if (i+1) == self.total:
             print("")
+            
+    def _show_nototal(self, i, details = "", blank_spaces = 150):
+        self.stc.set_end()
+        if (self.stc.end - self.stc.start > self.step_time) or ((i+1) == self.total):
+            # Print the progress bar
+            print("\r" + " " * blank_spaces, end="")
+            print('\r' + f'Progress: '
+                 f"({i+1}/???) " + details + " | " + "Elapsed time : {}".format(self.tc.set_and_return()),
+                end='')
+            
+            self.stc.set_start()
+            
+        if (i+1) == self.total:
+            print("")
+    
+    def show(self, i, details = "", blank_spaces = 150):
+        if self.total == -1:
+            self._show_nototal(i, details, blank_spaces)
+            
+        else:
+            self._show(i, details, blank_spaces)
     
     
 ###
@@ -347,6 +368,10 @@ def track_job(job, total, details = "", update_interval=1):
         pb.show(rc, details = details)
         time.sleep(update_interval)
         
+    if job._number_left == 0:
+        pb.show(total, details = details)
+        print("")
+        
         
 
 ### Ref : https://stackoverflow.com/questions/14568647/create-zip-in-python
@@ -382,3 +407,20 @@ def make_folder(path):
 def grouped(iterable, n):
     "s -> (s0,s1,s2,...sn-1), (sn,sn+1,sn+2,...s2n-1), (s2n,s2n+1,s2n+2,...s3n-1), ..."
     return zip(*[iter(iterable)]*n)
+
+
+###
+# ref : https://stackoverflow.com/questions/48929553/get-hard-disk-size-in-python
+def disk_usage(path = "/"):
+    """
+    Example
+    -------
+    When your working directory is on the disk which you want to check:
+        disk_usage(path = "/")
+    
+    """
+    total, used, free = shutil.disk_usage(path)
+
+    print("Total: %d GiB" % (total // (2**30)))
+    print("Used: %d GiB" % (used // (2**30)))
+    print("Free: %d GiB" % (free // (2**30)))
